@@ -11,7 +11,7 @@ class RegistroContainer extends React.Component {
         }
     }
 
-    onCreateAd=()=>{
+    onCreateAd= async ()=>{
       let ad={
             name:this.refs.name.value,
             description:this.refs.description.value,
@@ -19,7 +19,7 @@ class RegistroContainer extends React.Component {
             serviceUserId:this.refs.serviceUserId.value
 
           };
-      fetch('http://efactura.softmatservices.com/v1/createAd',{
+    fetch('http://efactura.softmatservices.com/v1/createAd',{
         method: 'POST',
         headers:{'Content-type':'application/json'},
         body: ad
