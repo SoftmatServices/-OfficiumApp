@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "./Home";
+import Actualizacion from "./Components/Actualizacion"
 import RegistroContainer from "./Components/CreateAd/RegistroContainer";
 import {
   BrowserRouter as Router,
@@ -17,6 +18,9 @@ function App(){
 						<Link to="/Home" className="btn btn.dark">
 						   Home
 						</Link>
+						<Link to="/Actualizacion" className="btn btn.dark">
+						   Actualizacion
+						</Link>
 						<Link to="/RegistroContainer" className="btn btn.dark" activeClassName="active">
 						   Crear anuncio
 						</Link>
@@ -24,6 +28,9 @@ function App(){
 				<Switch>
 					<Router path="/home">
 						<Home />
+					</Router>
+					<Router path="/Actualizacion">
+						<Actualizacion />
 					</Router>
 					<Router path="/RegistroContainer">
 						<RegistroContainer />
