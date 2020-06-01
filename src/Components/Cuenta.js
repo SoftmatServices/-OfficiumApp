@@ -9,7 +9,8 @@ class Cuenta extends React.Component {
       nameError: '',
       emailError: '',
       surnameError: '',
-      password: ""
+      password: "",
+      mesage: ""
     };
   }
 
