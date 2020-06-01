@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./Home";
-import Actualizacion from "./Components/Actualizacion"
+import Cuenta from "./Components/Cuenta";
+import Actualizacion from "./Components/Actualizacion";
 import RegistroContainer from "./Components/CreateAd/RegistroContainer";
 import {
   BrowserRouter as Router,
@@ -17,6 +18,9 @@ function App(){
 				<div className="btn-group mt-3">
 						<Link to="/Home" className="btn btn.dark">
 						   Home
+						</Link >
+						<Link to="/Cuenta" className="btn btn.dark">
+						   Cuenta
 						</Link>
 						<Link to="/Actualizacion" className="btn btn.dark">
 						   Actualizacion
@@ -29,6 +33,9 @@ function App(){
 					<Router path="/home">
 						<Home />
 					</Router>
+					<Route path = "/Cuenta">
+						<Cuenta />
+					</Route>
 					<Router path="/Actualizacion">
 						<Actualizacion />
 					</Router>
