@@ -47,7 +47,7 @@ onCreateUser= async ()=>{
           <h4>Actualización de Datos</h4>
           <br />
         <div className='form-group'>
-          <label htmlFor='name'>Nombres: </label>
+          <label htmlFor='name'>Nombres  :   </label>
           <input type="text"  ref="name"/>
         <div className='invalid-feedback'>{this.state.nameError}</div>
         </div>
@@ -59,7 +59,7 @@ onCreateUser= async ()=>{
         </div>
 
         <div className='form-group'>
-          <label htmlFor='email'>Fecha de nacimiento</label>
+          <label htmlFor='email'>Fecha de nacimiento: </label>
           <input type="text"  ref="birthdate"/>
           <div className='invalid-feedback'>{this.state.emailError}</div>
         </div>
@@ -180,7 +180,8 @@ onCreateUser= async ()=>{
           <div className='invalid-feedback'>{this.state.professionError}</div>
         </div>
 
-        <button type='submit' className='btn btn-success btn-block'>
+        <button onClick = {this.onCreateAd}>
+          <p>{this.state.message}</p>
           Actualizar
         </button>
       </form>
