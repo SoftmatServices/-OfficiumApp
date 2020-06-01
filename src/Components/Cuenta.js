@@ -66,15 +66,24 @@ class Cuenta extends React.Component {
     });
   }
 
-  handleSubmit = event => {
-    event.preventDefault();
-    const { name, email, surname, password} = this.state;
-    alert(`Your state values: \n 
-            name: ${name} \n 
-            email: ${email} \n
-            surname: ${surname} \n
-            password: ${password}`);
-  };
+  onCreateUser= async ()=>{
+    let ad={
+          name:this.name.value,
+          description:this.refs.description.value,
+          serviceCatAdId:this.refs.serviceCatAdId.value,
+          serviceUserId:this.refs.serviceUserId.value
+
+        };
+  fetch('http://efactura.softmatservices.com/v1/createAd',{
+      method: 'POST',
+      headers:{'Content-type':'application/json'},
+      body: ad
+    }).then(r=>r.json()).then(res=>{
+      if(res){
+        this.setState({message:'New Employee is Created Successfully'});
+      }
+    });
+  }
   
 
   render() {
