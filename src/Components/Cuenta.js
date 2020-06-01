@@ -83,49 +83,25 @@ class Cuenta extends React.Component {
         <h4>Crear tu Cuenta</h4>
         <br />
         <div className='form-group'>
-          <label htmlFor='name'>Nombres</label>
-          <input
-            name='name'
-            className={`form-control ${this.state.nameError ? 'is-invalid' : ''}`}
-            id='name'
-            placeholder='Ingreses su nombre'
-            value={this.state.name}
-            onChange={this.handleNameChange}
-            onBlur={this.validateName}
-          />
+          <label htmlFor='name'>Nombres :</label>
+          <input type="text"  ref="name"/>
           <div className='invalid-feedback'>{this.state.nameError}</div>
         </div>
 
         <div className='form-group'>
-          <label htmlFor='surname'>Apelidos:</label>
-          <input
-            name='surname'
-            className={`form-control ${this.state.surnameError ? 'is-invalid' : ''}`}
-            id='surname'
-            placeholder='Ingrese sus Apellidos'
-            value={this.state.surname}
-            onChange={this.handleSurnameChange}
-            onBlur={this.validateSurname}
-          />
+          <label htmlFor='surname'>Apelidos :</label>
+          <input type="text"  ref="apellido"/>
           <div className='invalid-feedback'>{this.state.surnameError}</div>
         </div>
 
         <div className='form-group'>
-          <label htmlFor='email'>Correo</label>
-          <input
-            name='email'
-            className={`form-control ${this.state.emailError ? 'is-invalid' : ''}`}
-            id='email'
-            placeholder='Ingrese su Correo'
-            value={this.state.email}
-            onChange={this.handleEmailChange}
-            onBlur={this.validateEmail}
-          />
+          <label htmlFor='email'>Correo :</label>
+          <input type="text"  ref="email"/>
           <div className='invalid-feedback'>{this.state.emailError}</div>
         </div>
 
         <div className='form-group'>
-          <label htmlFor='password'>Contraseña</label>
+          <label htmlFor='password'>Contraseña :</label>
           <input
             name='password'
             className={`form-control ${this.state.emailError ? 'is-invalid' : ''}`}
@@ -137,7 +113,8 @@ class Cuenta extends React.Component {
           />
           <div className='invalid-feedback'>{this.state.passwordError}</div>
         </div>
-        <button type='submit' className='btn btn-success btn-block'>
+        <button onClick = {this.onCreateAd}>
+          <p>{this.state.message}</p>
           Crear
         </button>
       </form>
