@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 class Cuenta extends React.Component {
   constructor(props) {
     super(props);
@@ -112,15 +113,7 @@ class Cuenta extends React.Component {
 
         <div className='form-group'>
           <label htmlFor='password'>Contraseña :</label>
-          <input
-            name='password'
-            className={`form-control ${this.state.emailError ? 'is-invalid' : ''}`}
-            id='password'
-            placeholder='Ingrese su Contraseña'
-            value={this.state.password}
-            onChange={this.handlePasswordChange}
-            onBlur={this.validatePassword}
-          />
+          <input type="text"  ref="password"/>
           <div className='invalid-feedback'>{this.state.passwordError}</div>
         </div>
         <button onClick = {this.onCreateAd}>
