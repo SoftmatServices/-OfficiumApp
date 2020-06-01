@@ -34,22 +34,24 @@ class ListaContainer extends React.Component {
 		}
 
 		return (
-			<div>
-				<div className="container">
+			<div >
+				<div className="container-fluid mt-4">
 		        	<div className="subcontainer">	
 		        		<Search handleSearch ={this.handleSearch}/>
 		        	</div>
 	        	</div>
-				<div className="list">
-			        {listas.map((list) => <Lista
-			        	//key = {list.string()}
-			        	name = {list.name} 
-			        	category = {list.category}
-						description = {list.description}
-						serviceCategoryCdId = {list.service_category_ad_id}
-						serviceUserId = {list.service_user_id}
-					/>)
-								}	
+				<div className="container bg-light">
+					<div className="row justify-content-center"> 
+				        {listas.map((list) => <Lista
+				        	//key = {list.string()}
+				        	name = {list.name} 
+				        	category = {list.category}
+							description = {list.description}
+							serviceCategoryCdId = {list.service_category_ad_id}
+							serviceUserId = {list.service_user_id}
+						/>)
+				   		}
+				   	</div>	
 			    </div>
 		    </div>
 	              
