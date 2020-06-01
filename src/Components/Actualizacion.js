@@ -47,7 +47,7 @@ onCreateUser= async ()=>{
           <h4>Actualización de Datos</h4>
           <br />
         <div className='form-group'>
-          <label htmlFor='name'>Nombres</label>
+          <label htmlFor='name'>Nombres: </label>
           <input type="text"  ref="name"/>
         <div className='invalid-feedback'>{this.state.nameError}</div>
         </div>
