@@ -7,10 +7,6 @@ class RegistroContainer extends React.Component {
         super(props)
 
         this.state = {
-          name: '',
-          description: '',
-          serviceCatAdId: '',
-          serviceUserId: '',
             mesage:''
         }
     }
@@ -39,16 +35,16 @@ class RegistroContainer extends React.Component {
       <div>
         <h2>Ingrece los siguientes datos...</h2>
         <p>
-          <label>name: <input type="text"  ref="{this.name}"></input></label>
+          <label>name: <input type="text"  ref="name"></input></label>
         </p>
         <p>
-          <label>description : <input type="text" ref="{description}"></input></label>
+          <label>description : <input type="text" ref="description"></input></label>
         </p>
         <p>
-          <label>serviceCatAdId : <input type="text" ref="{serviceCatAdId}"></input></label>
+          <label>serviceCatAdId : <input type="text" ref="serviceCatAdId"></input></label>
         </p>
         <p>
-          <label>serviceUserId : <input type="text" ref="{serviceUserId}"></input></label>
+          <label>serviceUserId : <input type="text" ref="serviceUserId"></input></label>
         </p>
         <button onClick={this.onCreateAd}>Crear</button>
         <p>{this.state.message}</p>
