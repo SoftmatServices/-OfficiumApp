@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-
+import Ciudad from './Ciudad';
+import Departamento from './Departamento';
 
 class Cuenta extends React.Component {
   constructor(props) {
@@ -68,66 +69,12 @@ onCreateUser= async ()=>{
 
         <div className='form-group'>
           <label htmlFor='city'>Ciudad</label>
-
-          <select  
-            name='city' 
-            className={`form-control ${this.state.cityError ? 'is-invalid' : ''}`} 
-            id='city'  
-            value={this.state.city} 
-            onChange={this.handleCityChange} 
-            onBlur={this.validateCity}
-            >
-            <option>Ingrese su Ciudad</option>
-            <option>Medellín</option>
-            <option>Pereira</option>
-            <option>Neiva</option>
-            <option>Manizales</option>
-            <option>Soacha</option>
-            <option>Valledupar</option>
-            <option>Ibagué</option>
-            <option>Santa Marta</option>
-            <option>Bello</option>
-            <option>Bogotá</option>
-            <option>Armenia</option>
-            <option>Villavicencio</option>
-            <option>Pasto</option>
-            <option>Soledad</option>
-            <option>Bucaramanga</option>
-            <option>Cartagena de Indias</option>
-            <option>Montería</option>
-            <option>Cúcuta</option>
-            <option>Barranquilla</option>
-            <option>Cali</option>
-          </select >
-          <div className='invalid-feedback'>{this.state.cityError}</div>
+            <Ciudad />
         </div>
 
         <div className='form-group'>
           <label htmlFor='department'>Departamento</label>
-          <select
-           ref="{this.state}"
-          >
-            <option>Ingrese su Departamento</option>
-            <option>Atlántico</option>
-            <option>Bolívar</option>
-            <option>Nariño</option>
-            <option>Santander</option>
-            <option>Valle del Cauca</option>
-            <option>Antioquia</option>
-            <option>Atlántico</option>
-            <option>Caldas</option>
-            <option>Cesar</option>
-            <option>Córdoba</option>
-            <option>Cundinamarca</option>
-            <option>Huila</option>
-            <option>Magdalena</option>
-            <option>Meta</option>
-            <option>Norte de Santander</option>
-            <option>Quindío</option>
-            <option>Risaralda</option>
-            <option>Tolima</option>
-    
-          </select>
+            <Departamento />
           <div className='invalid-feedback'>{this.state.departmentError}</div>
         </div>
 
