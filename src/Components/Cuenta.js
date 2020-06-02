@@ -96,25 +96,24 @@ class Cuenta extends React.Component {
         <div >
           <label htmlFor='name'>Nombres :</label>
           <input type="text"  ref="name"/>
-          <div className='invalid-feedback'>{this.state.nameError}</div>
         </div>
 
         <div className='form-group'>
           <label htmlFor='surname'>Apelidos :</label>
           <input type="text"  ref="apellido"/>
-          <div className='invalid-feedback'>{this.state.surnameError}</div>
+          
         </div>
 
         <div className='form-group'>
           <label htmlFor='email'>Correo :</label>
           <input type="text"  ref="email"/>
-          <div className='invalid-feedback'>{this.state.emailError}</div>
+          
         </div>
 
         <div className='form-group'>
           <label htmlFor='password'>Contraseña :</label>
           <input type="text"  ref="password"/>
-          <div className='invalid-feedback'>{this.state.passwordError}</div>
+          
         </div>
         <button onClick = {this.onCreateAd}>
           <p>{this.state.message}</p>
