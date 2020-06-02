@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Ciudad from './Ciudad';
 import Departamento from './Departamento';
+import './Actualizacion.css';
 
 class Cuenta extends React.Component {
   constructor(props) {
@@ -44,7 +45,7 @@ onCreateUser= async ()=>{
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onClick={this.onCreateAd}>
           <h4>Actualización de Datos</h4>
           <br />
           <div >
