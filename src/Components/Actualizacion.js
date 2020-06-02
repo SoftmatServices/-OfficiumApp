@@ -47,45 +47,44 @@ onCreateUser= async ()=>{
       <form onSubmit={this.handleSubmit}>
           <h4>Actualización de Datos</h4>
           <br />
-        <div className='form-group'>
-          <label htmlFor='name'>Nombres  :   </label>
-          <input type="text"  ref="name"/>
-        <div className='invalid-feedback'>{this.state.nameError}</div>
+          <div >
+            <label htmlFor='name'>Nombres :</label>
+            <input type="text" name="name" id="name" placeholder="Nombre Completo" onChange={this.fillToSubscribeName} ></input>
         </div>
-
-        <div className='form-group'>
-          <label htmlFor='surname'>Correo:</label>
-          <input type="text"  ref="email"/>
-          <div className='invalid-feedback'>{this.state.surnameError}</div>
+        <br />
+        <div>
+          <label htmlFor='email'>Correo :</label>
+          <input type="text" name="name" id="email"  onChange={this.fillToSubscribeemail} ></input>
         </div>
+        <br />
 
-        <div className='form-group'>
+        <div>
           <label htmlFor='email'>Fecha de nacimiento: </label>
-          <input type="text"  ref="birthdate"/>
-          <div className='invalid-feedback'>{this.state.emailError}</div>
+          <input type="Date"  ref="birthdate"/>
+          
         </div>
         
         <h5>¿Dónde Vives?</h5>
 
-        <div className='form-group'>
+        <div>
           <label htmlFor='city'>Ciudad</label>
             <Ciudad />
         </div>
 
-        <div className='form-group'>
+        <div>
           <label htmlFor='department'>Departamento</label>
             <Departamento />
           <div className='invalid-feedback'>{this.state.departmentError}</div>
         </div>
-
-        <div className='form-group'>
+        <br />
+        <div>
           <label htmlFor='direction'>Celular</label>
           <input type="text"  ref="mobilePhone"/>
           <div className='invalid-feedback'>{this.state.directionError}</div>
         </div>
 
         <h5>Contactar</h5>
-        <div className='form-group'>
+        <div>
           <label htmlFor='main'>Telefono Principal</label>
           <input
             name='main'
