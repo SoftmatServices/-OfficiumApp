@@ -95,25 +95,17 @@ class Cuenta extends React.Component {
         <br />
         <div >
           <label htmlFor='name'>Nombres :</label>
-          <input type="text"  ref="name"/>
+          <input type="text" name="name" id="name" placeholder="Nombre Completo" onChange={this.fillToSubscribeName} ></input>
         </div>
-
-        <div className='form-group'>
-          <label htmlFor='surname'>Apelidos :</label>
-          <input type="text"  ref="apellido"/>
-          
-        </div>
-
-        <div className='form-group'>
+        <br />
+        <div>
           <label htmlFor='email'>Correo :</label>
-          <input type="text"  ref="email"/>
-          
+          <input type="text" name="name" id="email"  onChange={this.fillToSubscribeemail} ></input>
         </div>
-
-        <div className='form-group'>
+        <br />
+        <div>
           <label htmlFor='password'>Contraseña :</label>
-          <input type="text"  ref="password"/>
-          
+          <input type="text" name="password" id="email"  onChange={this.fillToSubscribepassword} ></input>
         </div>
         <button onClick = {this.onCreateAd}>
           <p>{this.state.message}</p>
