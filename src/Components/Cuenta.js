@@ -90,10 +90,10 @@ class Cuenta extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onClick ={this.onCreateAd}>
         <h4>Crear tu Cuenta</h4>
         <br />
-        <div className='form-group'>
+        <div >
           <label htmlFor='name'>Nombres :</label>
           <input type="text"  ref="name"/>
           <div className='invalid-feedback'>{this.state.nameError}</div>
