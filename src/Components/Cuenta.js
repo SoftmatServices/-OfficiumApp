@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './Actualizacion.css';
 class Cuenta extends React.Component {
   constructor(props) {
     super(props);
@@ -95,17 +95,17 @@ class Cuenta extends React.Component {
         <br />
         <div >
           <label htmlFor='name'>Nombres :</label>
-          <input type="text" name="name" id="name" placeholder="Nombre Completo" onChange={this.fillToSubscribeName} ></input>
+          <input type="text" name="name"  ></input>
         </div>
         <br />
         <div>
           <label htmlFor='email'>Correo :</label>
-          <input type="text" name="name" id="email"  onChange={this.fillToSubscribeemail} ></input>
+          <input type="text" name="name" ></input>
         </div>
         <br />
         <div>
           <label htmlFor='password'>Contraseña :</label>
-          <input type="text" name="password" id="email"  onChange={this.fillToSubscribepassword} ></input>
+          <input type="text" name="password" ></input>
         </div>
         <button onClick = {this.onCreateAd}>
           <p>{this.state.message}</p>
