@@ -90,7 +90,7 @@ class RegistroContainer extends React.Component {
 
    render(){
     return(
-      <div>
+      <div className="container-fluid">
         <h2>Ingrece los siguientes datos...</h2>
         <p>
           <label>name: <input type='text'

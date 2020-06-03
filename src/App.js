@@ -14,7 +14,7 @@ import {
 function App(){
 	return (
 		<Router>
-			<div className="container-fluid bg-light">
+			<div className="container-fluid">
 				<div className="btn-group mt-3">
 						<Link to="/Home" className="btn btn.dark">
 						   Home
