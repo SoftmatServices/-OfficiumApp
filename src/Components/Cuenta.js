@@ -99,7 +99,7 @@ class Cuenta extends React.Component {
         </div>
         <br />
         <div>
-          <label htmlFor='email'>Correo :</label>
+          <label htmlFor='email'>Correo : &nbsp;</label>
           <input type="text" name="name" ></input>
         </div>
         <br />
