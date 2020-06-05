@@ -54,8 +54,8 @@ onCreateUser= async ()=>{
         </div>
         <br />
         <div>
-          <label htmlFor='email'>Correo :</label>
-          <input type="text" name="name" id="email"  onChange={this.fillToSubscribeemail} ></input>
+          <label htmlFor='email'>Correo : &nbsp;</label>
+          <input type="email" name="email" id="email"  onChange={this.fillToSubscribeemail} ></input>
         </div>
         <br />
 
