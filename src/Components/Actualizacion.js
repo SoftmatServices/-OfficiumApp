@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Ciudad from './Ciudad';
 import Departamento from './Departamento';
-import './Actualizacion.css';
+
 
 class Cuenta extends Component {
   constructor(props) {
@@ -68,37 +68,37 @@ onCreateUser= async ()=>{
         <h5>¿Dónde Vives?</h5>
 
         <div>
-          <label htmlFor='city'>Ciudad</label>
+          <label htmlFor='city'>Ciudad :</label>
             <Ciudad />
         </div>
 
         <div>
-          <label htmlFor='department'>Departamento</label>
+          <label htmlFor='department'>Departamento :</label>
             <Departamento />
           <div className='invalid-feedback'>{this.state.departmentError}</div>
         </div>
         <br />
         <div>
-          <label htmlFor='mobilePhone'>Celular</label>
+          <label htmlFor='mobilePhone'>Celular :</label>
           <input name="mobilePhone" type="text"/>
           <div className='invalid-feedback'>{this.state.directionError}</div>
         </div>
 
         <h5>Contactar</h5>
         <div>
-          <label htmlFor='main'>Telefono Principal</label>
+          <label htmlFor='main'>Telefono Principal :</label>
           <input  name='main'  type="text"/>
           <div className='invalid-feedback'>{this.state.mainError}</div>
         </div>
 
         <div className='form-group'>
-          <label htmlFor='secondary'>Telefono Segundario</label>
+          <label htmlFor='secondary'>Telefono Segundario :</label>
           <input name='secondary' type="text" />
           <div className='invalid-feedback'>{this.state.secondaryError}</div>
         </div>
 
         <div className='form-group'>
-          <label htmlFor='profession'>Cuel es tu Profesion</label>
+          <label htmlFor='profession'>Cuel es tu Profesion :</label>
           <input  name='profession' type="text"/>
           <div className='invalid-feedback'>{this.state.professionError}</div>
         </div>
