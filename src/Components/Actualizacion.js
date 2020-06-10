@@ -88,28 +88,14 @@ onCreateUser= async ()=>{
         <div>
           <label htmlFor='main'>Telefono Principal</label>
           <input
-            name='main'
-            className={`form-control ${this.state.mainError ? 'is-invalid' : ''}`}
-            id='main'
-            placeholder='Ingrese su Telefono'
-            value={this.state.main}
-            onChange={this.handleMainChange}
-            onBlur={this.validateMain}
-          />
+            name='main' ref="mainPhone"/>
           <div className='invalid-feedback'>{this.state.mainError}</div>
         </div>
 
         <div className='form-group'>
           <label htmlFor='secondary'>Telefono Segundario</label>
           <input
-            name='secondary'
-            className={`form-control ${this.state.secondaryError ? 'is-invalid' : ''}`}
-            id='secondary'
-            placeholder='Ingrese su Telefono'
-            value={this.state.secondary}
-            onChange={this.handleSecondaryChange}
-            onBlur={this.validateSecondary}
-          />
+            name='secondary' ref="secondaryPhone"/>
           <div className='invalid-feedback'>{this.state.secondaryError}</div>
         </div>
 
