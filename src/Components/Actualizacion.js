@@ -50,7 +50,7 @@ onCreateUser= async ()=>{
           <br />
           <div >
             <label htmlFor='name'>Nombres :</label>
-            <input type="text" name="name" id="name" placeholder="Nombre Completo" onChange={this.fillToSubscribeName} ></input>
+            <input type="text" name="name" id="name" onChange={this.fillToSubscribeName} ></input>
         </div>
         <br />
         <div>
@@ -80,36 +80,26 @@ onCreateUser= async ()=>{
         <br />
         <div>
           <label htmlFor='mobilePhone'>Celular</label>
-          <input type="text"  ref="mobilePhone"/>
+          <input name="mobilePhone" type="text"  ref="mobilePhone"  id="mobilePhone"/>
           <div className='invalid-feedback'>{this.state.directionError}</div>
         </div>
 
         <h5>Contactar</h5>
         <div>
           <label htmlFor='main'>Telefono Principal</label>
-          <input
-            name='main' ref="mainPhone"/>
+          <input  name='main' ref="mainPhone" type="text" id="main"/>
           <div className='invalid-feedback'>{this.state.mainError}</div>
         </div>
 
         <div className='form-group'>
           <label htmlFor='secondary'>Telefono Segundario</label>
-          <input
-            name='secondary' ref="secondaryPhone"/>
+          <input name='secondary' ref="secondaryPhone" type="text" id="secondary"/>
           <div className='invalid-feedback'>{this.state.secondaryError}</div>
         </div>
 
         <div className='form-group'>
           <label htmlFor='profession'>Cuel es tu Profesion</label>
-          <input
-            name='profession'
-            className={`form-control ${this.state.professionError ? 'is-invalid' : ''}`}
-            id='profession'
-            placeholder='Ingrese tu Profesion'
-            value={this.state.profession}
-            onChange={this.handleProfessionChange}
-            onBlur={this.validateProfession}
-          />
+          <input  name='profession' ref="secondaryPhone" type="text" id="profession"/>
           <div className='invalid-feedback'>{this.state.professionError}</div>
         </div>
 
