@@ -3,7 +3,7 @@ import Ciudad from './Ciudad';
 import Departamento from './Departamento';
 import './Actualizacion.css';
 
-class Cuenta extends React.Component {
+class Cuenta extends Component {
   constructor(props) {
     super(props);
     this.state = {
