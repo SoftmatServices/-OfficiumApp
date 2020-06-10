@@ -61,7 +61,7 @@ onCreateUser= async ()=>{
 
         <div>
           <label htmlFor='email'>Fecha de nacimiento: </label>
-          <input type="Date"  ref="birthdate"/>
+          <input type="Date"  ref="birthdate" onChange={this.fillToSubscribeName} />
           
         </div>
         
@@ -80,26 +80,26 @@ onCreateUser= async ()=>{
         <br />
         <div>
           <label htmlFor='mobilePhone'>Celular</label>
-          <input name="mobilePhone" type="text"  ref="mobilePhone"  id="mobilePhone"/>
+          <input name="mobilePhone" type="text"  ref="mobilePhone"  id="mobilePhone" onChange={this.fillToSubscribeName} />
           <div className='invalid-feedback'>{this.state.directionError}</div>
         </div>
 
         <h5>Contactar</h5>
         <div>
           <label htmlFor='main'>Telefono Principal</label>
-          <input  name='main' ref="mainPhone" type="text" id="main"/>
+          <input  name='main' ref="mainPhone" type="text" id="main" onChange={this.fillToSubscribeName} />
           <div className='invalid-feedback'>{this.state.mainError}</div>
         </div>
 
         <div className='form-group'>
           <label htmlFor='secondary'>Telefono Segundario</label>
-          <input name='secondary' ref="secondaryPhone" type="text" id="secondary"/>
+          <input name='secondary' ref="secondaryPhone" type="text" id="secondary" onChange={this.fillToSubscribeName} />
           <div className='invalid-feedback'>{this.state.secondaryError}</div>
         </div>
 
         <div className='form-group'>
           <label htmlFor='profession'>Cuel es tu Profesion</label>
-          <input  name='profession' ref="secondaryPhone" type="text" id="profession"/>
+          <input  name='profession' ref="secondaryPhone" type="text" id="profession" onChange={this.fillToSubscribeName} />
           <div className='invalid-feedback'>{this.state.professionError}</div>
         </div>
 
