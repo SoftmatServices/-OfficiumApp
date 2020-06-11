@@ -66,7 +66,7 @@ class RegistroContainer extends React.Component {
         });
         console.log(ad)*/
 
-    const response = await fetch('http://efactura.softmatservices.com/v1/createAd'
+    const response = await fetch('http://oficium.softmatservices.com/v1/createAd'
         ,{
             mode: 'no-cors',
             method:'POST',
