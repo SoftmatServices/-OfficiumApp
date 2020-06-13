@@ -33,40 +33,8 @@ class RegistroContainer extends React.Component {
         this.setState({serviceUserId: event.target.value});
     }
     onCreateAd= async ()=>{
-      /* let ad={
-            name:this.refs.name.value,
-            description:this.refs.description.value,
-            serviceCatAdId:this.refs.serviceCatAdId.value,
-            serviceUserId:this.refs.serviceUserId.value
-          };
-   fetch('http://efactura.softmatservices.com/v1/createAd',{
-        mode:'no-cors',
-        method: 'POST',
-        headers:{'Content-type':'application/json'},
-        body: ad
-      }).then(r=>r.json()).then(res=>{
-        if(res){
-          this.setState({message:'New Employee is Created Successfully'});
-        }
-      });
 
-      const requestOptions = {
-        mode:'no-cors',
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: ad.name, 
-          description: ad.description,
-          serviceCatAdId: ad.serviceCatAdId,
-          serviceUserId: ad.serviceUserId })
-    };
-    fetch('http://efactura.softmatservices.com/v1/createAd', requestOptions) ,{
-        //.then(response => response.json())
-        .then(() => {
-            alert('Thank you for subscribing!');
-        });
-        console.log(ad)*/
-
-    const response = await fetch('http://oficium.softmatservices.com/v1/createAd'
+    /*const response = await fetch('http://oficium.softmatservices.com/v1/createAd'
         ,{
             mode: 'no-cors',
             method:'POST',
@@ -85,7 +53,48 @@ class RegistroContainer extends React.Component {
               console.info('fetch()', response);
               return response;
         })
-        
+        */
+
+        function createGist(opts) {
+  console.log('Posting request to GitHub API...');
+  fetch('http://oficium.softmatservices.com/v1/createAd', {
+    method: 'POST',
+    /*headers: {
+      'Content-Type': 'application/json'
+    },*/
+    body: opts
+    //body: JSON.stringify(opts)
+  }).then(function(response) {
+    return response.json();
+  }).then(function(data) {
+    console.log('Created Gist:');
+  });
+}
+
+
+var formData = new FormData();
+
+var vari = {
+  /*'name':'prueba post',
+  'description':'prueba post final', 
+  'serviceCatAdId':1,
+  'serviceUserId':1*/
+    'name': this.state.name, 
+    'description': this.state.description,
+    'serviceCatAdId': this.state.serviceCatAdId,
+    'serviceUserId': this.state.serviceUserId
+}
+
+
+for(var k in vari){
+  formData.append(k,vari[k]);
+
+}
+
+
+
+
+createGist(formData);
     }
 
    render(){
