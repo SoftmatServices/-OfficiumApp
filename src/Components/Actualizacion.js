@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import Ciudad from './Ciudad';
 import Departamento from './Departamento';
-import './Actualizacion.css';
 
-class Cuenta extends React.Component {
+
+class Cuenta extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -50,12 +50,12 @@ onCreateUser= async ()=>{
           <br />
           <div >
             <label htmlFor='name'>Nombres :</label>
-            <input type="text" name="name" id="name" placeholder="Nombre Completo" onChange={this.fillToSubscribeName} ></input>
+            <input type="text" name="name"></input>
         </div>
         <br />
         <div>
           <label htmlFor='email'>Correo : &nbsp;</label>
-          <input type="email" name="email" id="email"  onChange={this.fillToSubscribeemail} ></input>
+          <input type="email" name="email"></input>
         </div>
         <br />
 
@@ -68,62 +68,38 @@ onCreateUser= async ()=>{
         <h5>¿Dónde Vives?</h5>
 
         <div>
-          <label htmlFor='city'>Ciudad</label>
+          <label htmlFor='city'>Ciudad :</label>
             <Ciudad />
         </div>
 
         <div>
-          <label htmlFor='department'>Departamento</label>
+          <label htmlFor='department'>Departamento :</label>
             <Departamento />
           <div className='invalid-feedback'>{this.state.departmentError}</div>
         </div>
         <br />
         <div>
-          <label htmlFor='direction'>Celular</label>
-          <input type="text"  ref="mobilePhone"/>
+          <label htmlFor='mobilePhone'>Celular :</label>
+          <input name="mobilePhone" type="text"/>
           <div className='invalid-feedback'>{this.state.directionError}</div>
         </div>
 
         <h5>Contactar</h5>
         <div>
-          <label htmlFor='main'>Telefono Principal</label>
-          <input
-            name='main'
-            className={`form-control ${this.state.mainError ? 'is-invalid' : ''}`}
-            id='main'
-            placeholder='Ingrese su Telefono'
-            value={this.state.main}
-            onChange={this.handleMainChange}
-            onBlur={this.validateMain}
-          />
+          <label htmlFor='main'>Telefono Principal :</label>
+          <input  name='main'  type="text"/>
           <div className='invalid-feedback'>{this.state.mainError}</div>
         </div>
 
         <div className='form-group'>
-          <label htmlFor='secondary'>Telefono Segundario</label>
-          <input
-            name='secondary'
-            className={`form-control ${this.state.secondaryError ? 'is-invalid' : ''}`}
-            id='secondary'
-            placeholder='Ingrese su Telefono'
-            value={this.state.secondary}
-            onChange={this.handleSecondaryChange}
-            onBlur={this.validateSecondary}
-          />
+          <label htmlFor='secondary'>Telefono Segundario :</label>
+          <input name='secondary' type="text" />
           <div className='invalid-feedback'>{this.state.secondaryError}</div>
         </div>
 
         <div className='form-group'>
-          <label htmlFor='profession'>Cuel es tu Profesion</label>
-          <input
-            name='profession'
-            className={`form-control ${this.state.professionError ? 'is-invalid' : ''}`}
-            id='profession'
-            placeholder='Ingrese tu Profesion'
-            value={this.state.profession}
-            onChange={this.handleProfessionChange}
-            onBlur={this.validateProfession}
-          />
+          <label htmlFor='profession'>Cuel es tu Profesion :</label>
+          <input  name='profession' type="text"/>
           <div className='invalid-feedback'>{this.state.professionError}</div>
         </div>
 
