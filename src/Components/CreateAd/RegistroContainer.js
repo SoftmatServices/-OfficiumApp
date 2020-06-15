@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {getListasByCategory} from '../../Services/listas'
+import {getListasByCategory} from "../../Services/listas"
 
 
 class RegistroContainer extends React.Component {
@@ -8,6 +8,9 @@ class RegistroContainer extends React.Component {
         super(props)
 
         this.state = {
+            Category: [],
+            SelectedCautegory: "",
+            validadorError: "",
             name: "", 
             description: "",
             serviceCatAdId: "",
@@ -17,8 +20,24 @@ class RegistroContainer extends React.Component {
 
     async componentDidMount () {
     const responseJson = await getListasByCategory()
-    this.setState({ listas: responseJson.ads, isFetch: false})
-    }
+    this.setState({ Category: responseJson.servicecategory, isFetch: false})
+    .then(data =>{
+        let Categorias = data.map(cat => {
+            return {value: cat, 
+                    display: cat}
+        });
+        this.setState({
+            Category: [
+            {
+                value: '',
+                display: '(Seleccione una categoria)'
+             }
+             ].contact(Categorias)
+        });
+    }).catch(error => {
+        console.log(error);
+    });
+}
 
     fillToSubscribeName = (event) => {
         this.setState({name: event.target.value});
@@ -34,67 +53,33 @@ class RegistroContainer extends React.Component {
     }
     onCreateAd= async ()=>{
 
-    /*const response = await fetch('http://oficium.softmatservices.com/v1/createAd'
-        ,{
-            mode: 'no-cors',
-            method:'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                name: this.state.name, 
-                description: this.state.description,
-                serviceCatAdId: this.state.serviceCatAdId,
-                serviceUserId: this.state.serviceUserId
-            })
-        })
-    const responseJson = await response.json()
-    return responseJson
-    
-        .then(function(response) {
-              console.info('fetch()', response);
-              return response;
-        })
-        */
-
         function createGist(opts) {
-  console.log('Posting request to GitHub API...');
-  fetch('http://oficium.softmatservices.com/v1/createAd', {
-    method: 'POST',
-    /*headers: {
-      'Content-Type': 'application/json'
-    },*/
-    body: opts
-    //body: JSON.stringify(opts)
-  }).then(function(response) {
-    return response.json();
-  }).then(function(data) {
-    console.log('Created Gist:');
-  });
-}
+          console.log('Posting request to GitHub API...');
+          fetch('http://oficium.softmatservices.com/v1/createAd', {
+            method: 'POST',
+            body: opts
+        })
+          .then(function(response) {
+            return response.json();
+          })
+          .then(function(data) {
+            console.log('Created Gist:');
+          });
+        }
 
+        var formData = new FormData();
 
-var formData = new FormData();
+        var vari = {
+            'name': this.state.name, 
+            'description': this.state.description,
+            'serviceCatAdId': this.state.serviceCatAdId,
+            'serviceUserId': this.state.serviceUserId
+        }
+        for(var k in vari){
+          formData.append(k,vari[k]);
+        }
 
-var vari = {
-  /*'name':'prueba post',
-  'description':'prueba post final', 
-  'serviceCatAdId':1,
-  'serviceUserId':1*/
-    'name': this.state.name, 
-    'description': this.state.description,
-    'serviceCatAdId': this.state.serviceCatAdId,
-    'serviceUserId': this.state.serviceUserId
-}
-
-
-for(var k in vari){
-  formData.append(k,vari[k]);
-
-}
-
-
-
-
-createGist(formData);
+        createGist(formData);
     }
 
    render(){
@@ -117,6 +102,33 @@ createGist(formData);
                 onChange={this.fillToSubscribeDesc}
                 required></input></label>
         </p>
+        //<p>
+            <select 
+                    value = {this.state.SelectedCautegory}
+                    onChange={(e)=> 
+                        this.setState({
+                            SelectedCautegory: e.target.value,
+                            validadorError: 
+                            e.target.value === ""
+                                ? "Debe seleccionar una categoria"
+                                : ""
+                        })
+                    }
+            >
+                {this.state.categorias.map((cat) => 
+                    <option 
+                        key={cat.value}
+                        value={cat.value}
+                    >
+                        {cat.display}
+                    </option>
+                    )
+                }
+            </select>
+            <div style= {{color: 'red', marginTop: '5px'}}>
+                {this.state.validadorError}
+            </div>
+        //</p>
         <p>
           <label>serviceCatAdId : <input  type='number'
                 name='serviceCatAdId'
