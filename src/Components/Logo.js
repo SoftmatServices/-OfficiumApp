@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import {Button, From, FormGroup, Label, Imput }
-  from 'reactstrap';
+
 import {FacebookLoginButton} from 'react-social-login-buttons';
 class Logo extends Component{
     render(){
