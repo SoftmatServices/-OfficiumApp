@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {getListasByCategory} from '../../Services/listas'
+import {getListasByCategory} from "../../Services/listas"
 
 
 class RegistroContainer extends React.Component {
@@ -8,6 +8,9 @@ class RegistroContainer extends React.Component {
         super(props)
 
         this.state = {
+            Category: [],
+            SelectedCautegory: "",
+            validadorError: "",
             name: "", 
             description: "",
             serviceCatAdId: "",
@@ -17,8 +20,24 @@ class RegistroContainer extends React.Component {
 
     async componentDidMount () {
     const responseJson = await getListasByCategory()
-    this.setState({ listas: responseJson.ads, isFetch: false})
-    }
+    this.setState({ Category: responseJson.servicecategory, isFetch: false})
+    .then(data =>{
+        let Categorias = data.map(cat => {
+            return {value: cat, 
+                    display: cat}
+        });
+        this.setState({
+            Category: [
+            {
+                value: '',
+                display: '(Seleccione una categoria)'
+             }
+             ].contact(Categorias)
+        });
+    }).catch(error => {
+        console.log(error);
+    });
+}
 
     fillToSubscribeName = (event) => {
         this.setState({name: event.target.value});
@@ -33,59 +52,34 @@ class RegistroContainer extends React.Component {
         this.setState({serviceUserId: event.target.value});
     }
     onCreateAd= async ()=>{
-      /* let ad={
-            name:this.refs.name.value,
-            description:this.refs.description.value,
-            serviceCatAdId:this.refs.serviceCatAdId.value,
-            serviceUserId:this.refs.serviceUserId.value
-          };
-   fetch('http://efactura.softmatservices.com/v1/createAd',{
-        mode:'no-cors',
-        method: 'POST',
-        headers:{'Content-type':'application/json'},
-        body: ad
-      }).then(r=>r.json()).then(res=>{
-        if(res){
-          this.setState({message:'New Employee is Created Successfully'});
+
+        function createGist(opts) {
+          console.log('Posting request to GitHub API...');
+          fetch('http://oficium.softmatservices.com/v1/createAd', {
+            method: 'POST',
+            body: opts
+        })
+          .then(function(response) {
+            return response.json();
+          })
+          .then(function(data) {
+            console.log('Created Gist:');
+          });
         }
-      });
 
-      const requestOptions = {
-        mode:'no-cors',
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: ad.name, 
-          description: ad.description,
-          serviceCatAdId: ad.serviceCatAdId,
-          serviceUserId: ad.serviceUserId })
-    };
-    fetch('http://efactura.softmatservices.com/v1/createAd', requestOptions) ,{
-        //.then(response => response.json())
-        .then(() => {
-            alert('Thank you for subscribing!');
-        });
-        console.log(ad)*/
+        var formData = new FormData();
 
-    const response = await fetch('http://efactura.softmatservices.com/v1/createAd'
-        ,{
-            mode: 'no-cors',
-            method:'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                name: this.state.name, 
-                description: this.state.description,
-                serviceCatAdId: this.state.serviceCatAdId,
-                serviceUserId: this.state.serviceUserId
-            })
-        })
-    const responseJson = await response.json()
-    return responseJson
-    
-        .then(function(response) {
-              console.info('fetch()', response);
-              return response;
-        })
-        
+        var vari = {
+            'name': this.state.name, 
+            'description': this.state.description,
+            'serviceCatAdId': this.state.serviceCatAdId,
+            'serviceUserId': this.state.serviceUserId
+        }
+        for(var k in vari){
+          formData.append(k,vari[k]);
+        }
+
+        createGist(formData);
     }
 
    render(){
@@ -108,6 +102,33 @@ class RegistroContainer extends React.Component {
                 onChange={this.fillToSubscribeDesc}
                 required></input></label>
         </p>
+        //<p>
+            <select 
+                    value = {this.state.SelectedCautegory}
+                    onChange={(e)=> 
+                        this.setState({
+                            SelectedCautegory: e.target.value,
+                            validadorError: 
+                            e.target.value === ""
+                                ? "Debe seleccionar una categoria"
+                                : ""
+                        })
+                    }
+            >
+                {this.state.categorias.map((cat) => 
+                    <option 
+                        key={cat.value}
+                        value={cat.value}
+                    >
+                        {cat.display}
+                    </option>
+                    )
+                }
+            </select>
+            <div style= {{color: 'red', marginTop: '5px'}}>
+                {this.state.validadorError}
+            </div>
+        //</p>
         <p>
           <label>serviceCatAdId : <input  type='number'
                 name='serviceCatAdId'

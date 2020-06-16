@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/List.css';
+import '../../css/List.css';
 import PropTypes from 'prop-types'
 
 const Lista = ({name, category, description, serviceCategoryCdId, serviceUserId}) => (

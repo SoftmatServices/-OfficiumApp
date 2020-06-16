@@ -1,7 +1,7 @@
 import React from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import ListaContainer from './Components/ListaContainer';
-import Lista from './Components/Lista';
+import ListaContainer from './Components/ListaHome/ListaContainer';
+import Lista from './Components/ListaHome/Lista';
 import './css/Menu.css';
 import {getListasByPopular} from './Services/listas'
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import Lista from './Lista'
-import '../css/List.css';
-import '../css/Item.css';
+import '../../css/List.css';
+import '../../css/Item.css';
 import Search from './Search';
-import {getListasByPopular, getListasBySearch} from '../Services/listas'
+import {getListasByPopular, getListasBySearch} from '../../Services/listas'
 
 class ListaContainer extends React.Component {
 	constructor (props) {
@@ -34,7 +34,7 @@ class ListaContainer extends React.Component {
 		}
 
 		return (
-			<div>
+			<div >
 				<div className="container-fluid mt-4">
 		        	<div className="subcontainer">	
 		        		<Search handleSearch ={this.handleSearch}/>

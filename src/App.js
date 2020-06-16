@@ -19,6 +19,9 @@ function App(){
 						<Link to="/Home" className="btn btn.dark">
 						   Home
 						</Link >
+						<Link to="/Logo" className="btn btn.dark">
+						   Logo
+						</Link >
 						<Link to="/Cuenta" className="btn btn.dark">
 						   Cuenta
 						</Link>
@@ -30,6 +33,9 @@ function App(){
 						</Link>
 				</div>
 				<Switch>
+					<Router path="/Logo">
+						<logo />
+					</Router>
 					<Router path="/home">
 						<Home />
 					</Router>
