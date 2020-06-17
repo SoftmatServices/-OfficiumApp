@@ -47,25 +47,7 @@ render(){
 				</div>
 				<div class="card-footer">
 					<div class="d-flex justify-content-center links">
-						No tienes una cuenta?<a>		<Router>
-
-			
-				<div>
-						
-						<Link to="/Cuenta">
-						   Registrate
-						</Link>
-						
-				</div>
-				<Switch>
-					<Route path = "/Cuenta">
-						<Cuenta />
-					</Route>
-				</Switch>
-				
-			
-		</Router>
-		</a>
+						No tienes una cuenta?<Link to="/Cuenta">Registrate</Link>					
 					</div>
 					<div class="d-flex justify-content-center">
 						<a href="#">Olvidaste tu contraseña?</a>

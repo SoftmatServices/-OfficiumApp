@@ -16,14 +16,17 @@ import {
 function App(){
 	return (
 		
-				//<div>
-				//	<Menu/>
-				//</div>
-				
 
-		<div>
-		<Login/>
-		</div>
+		<Router>
+			<Route exact path="/" component={Login}/>
+			<Route exact path="/Menu" component={Menu}/>
+			<Route exact path="/Actualizar" component={Menu}/>
+			<Route exact path="/Ciudad" component={Menu}/>
+			<Route exact path="/Departamento" component={Menu}/>
+			<Route exact path="/RegistroContainer" component={Menu}/>
+			<Route exact path="/Cuenta" component={Cuenta}/>
+			
+		</Router>
 
 		)
 }

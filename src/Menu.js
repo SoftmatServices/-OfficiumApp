@@ -15,47 +15,24 @@ import {
 function Menu(){
 	return (
 		<Router>
-
 			<div>
 				<div>
-						<Link to="/Home">
-						   Home
-						</Link >
-						<Link to="/Cuenta">
-						   Cuenta
-						</Link>
-						<Link to="/Actualizacion">
-						   Actualizacion
-						</Link>
-						<Link to="/RegistroContainer" activeClassName="active">
-						   Crear anuncio
-						</Link>
+					<Link to="/Home">Home</Link >
+					<Link to="/Cuenta">Cuenta</Link>
+					<Link to="/Actualizacion">Actualizacion</Link>
+					<Link to="/RegistroContainer">Crear anuncio</Link>
 				</div>
 				<Switch>
-					<Router path="/Login">
-						<Login />
-					</Router>
-					<Router path="/home">
-						<Home />
-					</Router>
-					<Route path = "/Cuenta">
-						<Cuenta />
-					</Route>
-					<Router path="/Actualizacion">
-						<Actualizacion />
-					</Router>
-					<Router path="/RegistroContainer">
-						<RegistroContainer />
-					</Router>
+					<Router path="/Menu"><Home /></Router>
+					<Router path="/Home"><Home />
+					</Router><Router path="/Cuenta"><Cuenta /></Router>
+					<Router path="/Actualizacion"><Actualizacion /></Router>
+					<Router path="/RegistroContainer"><RegistroContainer /></Router>
 				</Switch>
-				
+				<Router path="/Actualizacion" component={Menu}/>
 			</div>
 		</Router>
-
-		/*<div>	
-		<Login/>
-		</div>*/
-		)
+	)
 }
 
 export default Menu;
