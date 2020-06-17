@@ -3,8 +3,6 @@ import Home from "./Home";
 import Cuenta from "./Components/Cuenta";
 import Actualizacion from "./Components/Actualizacion";
 import RegistroContainer from "./Components/CreateAd/RegistroContainer";
-import Login from "./Components/Login/Login";
-import Menu from "./Menu";
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,15 +13,45 @@ import {
 
 function App(){
 	return (
-		
-				//<div>
-				//	<Menu/>
-				//</div>
+		<Router>
+			<div className="container-fluid">
+				<div className="btn-group mt-3">
+						<Link to="/Home" className="btn btn.dark">
+						   Home
+						</Link >
+						<Link to="/Logo" className="btn btn.dark">
+						   Logo
+						</Link >
+						<Link to="/Cuenta" className="btn btn.dark">
+						   Cuenta
+						</Link>
+						<Link to="/Actualizacion" className="btn btn.dark">
+						   Actualizacion
+						</Link>
+						<Link to="/RegistroContainer" className="btn btn.dark" activeClassName="active">
+						   Crear anuncio
+						</Link>
+				</div>
+				<Switch>
+					<Router path="/Logo">
+						<logo />
+					</Router>
+					<Router path="/home">
+						<Home />
+					</Router>
+					<Route path = "/Cuenta">
+						<Cuenta />
+					</Route>
+					<Router path="/Actualizacion">
+						<Actualizacion />
+					</Router>
+					<Router path="/RegistroContainer">
+						<RegistroContainer />
+					</Router>
+				</Switch>
 				
-
-		<div>
-		<Login/>
-		</div>
+			</div>
+		</Router>
 		)
 }
 

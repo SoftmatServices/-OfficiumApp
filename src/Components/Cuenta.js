@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './Actualizacion.css';
 class Cuenta extends React.Component {
   constructor(props) {
     super(props);
