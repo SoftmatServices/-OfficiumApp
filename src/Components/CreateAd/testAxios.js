@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 
-class testAxios extends React.Component {
+class testAxios extends Component {
 
 
     state = {
