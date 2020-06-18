@@ -1,8 +1,10 @@
 import React from "react";
+import axios from 'axios'
 import Home from "./Home";
 import Cuenta from "./Components/Cuenta";
 import Actualizacion from "./Components/Actualizacion";
 import RegistroContainer from "./Components/CreateAd/RegistroContainer";
+import testAxios from "./Components/CreateAd/testAxios";
 import Login from "./Components/Login/Login";
 import Menu from "./Menu";
 import {
@@ -15,8 +17,6 @@ import {
 
 function App(){
 	return (
-		
-
 		<Router>
 			<Route exact path="/" component={Login}/>
 			<Route exact path="/Menu" component={Menu}/>
@@ -24,10 +24,9 @@ function App(){
 			<Route exact path="/Ciudad" component={Menu}/>
 			<Route exact path="/Departamento" component={Menu}/>
 			<Route exact path="/RegistroContainer" component={Menu}/>
+			<Route exact path="/testAxios" component={testAxios}/>
 			<Route exact path="/Cuenta" component={Cuenta}/>
-			
 		</Router>
-
 		)
 }
 
