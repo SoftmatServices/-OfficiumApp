@@ -1,9 +1,12 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import axios from 'axios'
 import '../../css/List.css'
-import PropTypes from 'prop-types'
-import { getListasByCategory } from "../../Services/listas"
-import { Redirect } from 'react-router-dom'
+import ListaContainer from '../ListaHome/ListaContainer';
+// eslint-disable-next-line no-unused-vars
+import PropTypes from 'prop-types';
+import { getListasByCategory } from "../../Services/listas";
+import { Redirect } from 'react-router-dom';
 
 
 class RegistroContainer extends React.Component {
@@ -124,6 +127,7 @@ class RegistroContainer extends React.Component {
                                     )
                                 }
                                 </select>
+                                <ListaContainer/>
                             </div>
                         </div>
                     </div>
