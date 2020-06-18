@@ -7,7 +7,6 @@ import RegistroContainer from "./Components/CreateAd/RegistroContainer";
 import testAxios from "./Components/CreateAd/testAxios";
 import Login from "./Components/Login/Login";
 import './css/Styles.css';
-import './css/bootstrap/dist/css/bootstrap.min.css';
 import Menu from "./Menu";
 import {
   BrowserRouter as Router,
