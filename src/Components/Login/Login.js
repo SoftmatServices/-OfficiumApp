@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Cuenta from "../Cuenta";
-import './Styles.css';
 import {
   BrowserRouter as Router,
   Switch,
