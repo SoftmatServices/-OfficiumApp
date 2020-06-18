@@ -94,8 +94,8 @@ class Cuenta extends Component {
         <h4>Crear tu Cuenta</h4>
         <br />
         <div >
-          <label htmlFor='name'>Nombres :</label>
-          <input type="text" name="name"  ></input>
+          <label For='name'>Nombres :</label>
+          <input type="text" name="name" required></input>
         </div>
         <br />
         <div>
