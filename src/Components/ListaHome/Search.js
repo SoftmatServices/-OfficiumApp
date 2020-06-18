@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/Menu.css';
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import PropTypes from 'prop-types'
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import PropTypes from 'prop-types';
 
 class Search extends React.Component{
 
