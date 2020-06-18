@@ -1,5 +1,5 @@
-import React from 'react'
-import Lista from './Lista'
+import React from 'react';
+import Lista from './Lista';
 import '../../css/List.css';
 import '../../css/Item.css';
 import Search from './Search';
