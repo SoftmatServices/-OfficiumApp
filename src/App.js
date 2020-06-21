@@ -3,11 +3,13 @@ import axios from 'axios'
 import Home from "./Home";
 import Cuenta from "./Components/Cuenta";
 import Actualizacion from "./Components/Actualizacion";
+import Ciudad from "./Components/Ciudad";
+import Departamento from "./Components/Departamento";
 import RegistroContainer from "./Components/CreateAd/RegistroContainer";
 import testAxios from "./Components/CreateAd/testAxios";
 import Login from "./Components/Login/Login";
 import './css/Styles.css';
-import Menu from "./Menu";
+import MnGen from "./MnGen";
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,12 +21,12 @@ import {
 function App(){
 	return (
 		<Router>
-			<Route exact path="/" component={Login}/>
-			<Route exact path="/Menu" component={Menu}/>
-			<Route exact path="/Actualizar" component={Menu}/>
-			<Route exact path="/Ciudad" component={Menu}/>
-			<Route exact path="/Departamento" component={Menu}/>
-			<Route exact path="/RegistroContainer" component={Menu}/>
+			<Route exact path="/" component={MnGen}/>
+			<Route exact path="/Login" component={Login}/>
+			<Route exact path="/Actualizacion" component={Actualizacion}/>
+			<Route exact path="/Ciudad" component={Ciudad}/>
+			<Route exact path="/Departamento" component={Departamento}/>
+			<Route exact path="/RegistroContainer" component={RegistroContainer}/>
 			<Route exact path="/testAxios" component={testAxios}/>
 			<Route exact path="/Cuenta" component={Cuenta}/>
 		</Router>
