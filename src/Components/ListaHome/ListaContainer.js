@@ -3,7 +3,7 @@ import Lista from './Lista';
 import '../../css/List.css';
 import '../../css/Item.css';
 import Search from './Search';
-import {getListasByPopular, getListasBySearch} from '../../Services/listas'
+import {getListasByPopular, getListasBySearch} from '../../Services/Get'
 
 class ListaContainer extends React.Component {
 	constructor (props) {

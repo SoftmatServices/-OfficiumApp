@@ -3,7 +3,6 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import ListaContainer from './Components/ListaHome/ListaContainer';
 import Lista from './Components/ListaHome/Lista';
 import './css/Menu.css';
-import {getListasByPopular} from './Services/listas'
 
 class Home extends React.Component{
 

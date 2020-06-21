@@ -10,6 +10,7 @@ import testAxios from "./Components/CreateAd/testAxios";
 import Login from "./Components/Login/Login";
 import './css/Styles.css';
 import MnGen from "./MnGen";
+import MnUser from "./MnUser";
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +23,8 @@ function App(){
 	return (
 		<Router>
 			<Route exact path="/" component={MnGen}/>
+			<Route exact path="/MnGen" component={MnGen}/>
+			<Route exact path="/MnUser" component={MnUser}/>
 			<Route exact path="/Login" component={Login}/>
 			<Route exact path="/Actualizacion" component={Actualizacion}/>
 			<Route exact path="/Ciudad" component={Ciudad}/>

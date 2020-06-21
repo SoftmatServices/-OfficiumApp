@@ -5,7 +5,7 @@ import '../../css/List.css'
 import ListaContainer from '../ListaHome/ListaContainer';
 // eslint-disable-next-line no-unused-vars
 import PropTypes from 'prop-types';
-import { getListasByCategory } from "../../Services/listas";
+import { getListasByCategory } from "../../Services/Get";
 import { Redirect } from 'react-router-dom';
 
 
