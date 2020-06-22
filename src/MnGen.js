@@ -13,12 +13,15 @@ import {
 function MnGen() {
 	return (
 		<Router>
+
 			<div>
-				<div>
-					<Link to="/Home">Home</Link >
-					<Link to="/Cuenta">Cuenta</Link>
-					<Link to="/Login">Iniciar sesion</Link>
-				</div>
+				<nav>
+					<div>
+						<Link to="/Home">Home</Link >
+						<Link to="/Cuenta">Cuenta</Link>
+						<Link to="/Login">Iniciar sesion</Link>
+					</div>
+				</nav>
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Router path="/Home"><Home /></Router>

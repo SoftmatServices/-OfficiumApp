@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Cuenta from "../Cuenta";
 import {
   BrowserRouter as Router,

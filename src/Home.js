@@ -9,7 +9,7 @@ class Home extends React.Component{
   render(){
     return (
 
-      <div className="container-fluid bg-light">
+      <div>
         <ListaContainer title="Services" />
       </div>
     );
