@@ -1,6 +1,5 @@
 import React from 'react';
 // eslint-disable-next-line no-unused-vars
-import PropTypes from 'prop-types';
 const Departamento = () => (
 	              
     <div className="col-6 col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2 bg-white">
@@ -25,14 +24,8 @@ const Departamento = () => (
           <option>Quindío</option>
           <option>Risaralda</option>
           <option>Tolima</option>
-  
         </select>    
-        </div>
-                 
+        </div>                 
     </div>
-
- 
-  
 )
-
 export default Departamento;
