@@ -90,9 +90,12 @@ class Cuenta extends Component {
 
   render() {
     return (
-      <form onClick ={this.onCreateAd} className='mi-clase'>
-            
-      </form>
+      <div className="d-flex justify-content-center h-100">
+        <div className="card">
+          <h3>Regitra tus Datos</h3>
+        </div>
+        
+      </div>
     );
   }
 }
