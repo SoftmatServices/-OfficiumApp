@@ -45,69 +45,81 @@ onCreateUser= async ()=>{
 
   render() {
     return (
-      <form onClick={this.onCreateAd}>
-          <h4>Actualización de Datos</h4>
-          <br />
-          <div >
-            <label htmlFor='name'>Nombres :</label>
-            <input type="text" name="name"></input>
-        </div>
-        <br />
-        <div>
-          <label htmlFor='email'>Correo : &nbsp;</label>
-          <input type="email" name="email"></input>
-        </div>
-        <br />
+      <div className="d-flex justify-content-center h-100">
+        <div className="card">
+          <div className="card-header">
+            <h3>Actualizar tus Datos</h3>
+          </div>
+          <div className="card-body">
+            <form>
+              <div className="input-group form-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><i className="fas fa-user"></i></span>
+                </div>
+                <input type="text" className="form-control" placeholder="Nombres"/>
+              </div>	
 
-        <div>
-          <label htmlFor='email'>Fecha de nacimiento: </label>
-          <input type="Date"  ref="birthdate"/>
-          
-        </div>
-        
-        <h5>¿Dónde Vives?</h5>
+              <div className="input-group form-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><i className="far fa-user"></i></span>
+                </div>
+                <input type="text" className="form-control" placeholder="Apellidos"/>
+              </div>
+              
+              <div className="input-group form-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><i className="fas fa-at"></i></span>
+                </div>
+                <input type="Date" className="form-control" placeholder="Fecha"/>
+              </div>
 
-        <div>
-          <label htmlFor='city'>Ciudad :</label>
-            <Ciudad />
-        </div>
+              <div className="card-header">
+                 <h6>¿Dónde Vives?</h6>
+              </div>
 
-        <div>
-          <label htmlFor='department'>Departamento :</label>
-            <Departamento />
-          <div className='invalid-feedback'>{this.state.departmentError}</div>
-        </div>
-        <br />
-        <div>
-          <label htmlFor='mobilePhone'>Celular :</label>
-          <input name="mobilePhone" type="text"/>
-          <div className='invalid-feedback'>{this.state.directionError}</div>
-        </div>
+              <div className="input-group form-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><i className="fas fa-at"></i></span>
+                </div>
+                <input Ciudad type="text" className="form-control" placeholder="Ciudad"/>
+              </div>
 
-        <h5>Contactar</h5>
-        <div>
-          <label htmlFor='main'>Telefono Principal :</label>
-          <input  name='main'  type="text"/>
-          <div className='invalid-feedback'>{this.state.mainError}</div>
-        </div>
+              <div className="input-group form-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><i className="fas fa-at"></i></span>
+                </div>
+                <input  type="text" className="form-control" placeholder="Departamento"/>
+              </div>
 
-        <div className='form-group'>
-          <label htmlFor='secondary'>Telefono Segundario :</label>
-          <input name='secondary' type="text" />
-          <div className='invalid-feedback'>{this.state.secondaryError}</div>
-        </div>
+              <div className="input-group form-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><i className="fas fa-at"></i></span>
+                </div>
+                <input  type="mobilePhone" className="form-control" placeholder="Celular"/>
+              </div>
 
-        <div className='form-group'>
-          <label htmlFor='profession'>Cuel es tu Profesion :</label>
-          <input  name='profession' type="text"/>
-          <div className='invalid-feedback'>{this.state.professionError}</div>
-        </div>
+              <div className="card-header">
+                 <h6>Selecciona tu Profesion</h6>
+              </div>
 
-        <button onClick = {this.onCreateAd}>
-          <p>{this.state.message}</p>
-          Actualizar
-        </button>
-      </form>
+              <div className="input-group form-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><i className="fas fa-at"></i></span>
+                </div>
+                <input  type="profession" className="form-control" placeholder="Cual es tu Profesion"/>
+              </div>
+           
+              <div className="form-group">
+                <input type="submit" value="Actualizar" className="btn float-right login_btn"/>
+              </div>
+            </form>
+          </div>
+          <div className="card-footer">
+            
+          </div>
+        </div>
+		  </div>
+      
     );
   }
 }
