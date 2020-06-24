@@ -90,7 +90,8 @@ class Cuenta extends Component {
 
   render() {
     return (
-      <form onClick ={this.onCreateAd} className='mi-clase'>    
+      <form onClick ={this.onCreateAd} className='mi-clase'>
+            
       </form>
     );
   }
