@@ -91,26 +91,7 @@ class Cuenta extends Component {
   render() {
     return (
       <form onClick ={this.onCreateAd}>
-        <h4>Crear tu Cuenta</h4>
-        <br />
-        <div >
-          <label For='name'>Nombres :</label>
-          <input type="text" name="name" required></input>
-        </div>
-        <br />
-        <div>
-          <label htmlFor='email'>Correo : &nbsp;</label>
-          <input type="email" name="email" ></input>
-        </div>
-        <br />
-        <div>
-          <label htmlFor='password'>Contraseña :</label>
-          <input type="text" name="password" ></input>
-        </div>
-        <button onClick = {this.onCreateAd}>
-          <p>{this.state.message}</p>
-          Crear
-        </button>
+       
       </form>
     );
   }
