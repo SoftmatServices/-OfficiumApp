@@ -92,7 +92,9 @@ class Cuenta extends Component {
     return (
       <form onClick ={this.onCreateAd}>
        <div className="d-flex justify-content-center h-100">
-
+         <div lassName="card-header">
+          <h3>Actualiza tus Datos</h3>
+         </div>
        </div>
       </form>
     );
