@@ -114,13 +114,6 @@ class Cuenta extends Component {
             <input type="button" class="btn btn-primary"  value="Guardar"/>
           </div>
 	      </div>
-
-        <div className="input-group form-group">
-							<div className="input-group-prepend">
-								<span className="input-group-text"><i className="fas fa-user"></i></span>
-							</div>
-							<input type="text" className="form-control" placeholder="Nombre de usuario"/>
-						</div>
       </form>
     );
   }
