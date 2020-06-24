@@ -90,8 +90,37 @@ class Cuenta extends Component {
 
   render() {
     return (
-      <form onClick ={this.onCreateAd}>
-               
+      <form onClick ={this.onCreateAd} className='mi-clase'>
+        <h4>Crear tu Cuenta</h4>
+        <br />
+        <div style={this.styles} className="input-group form-group">
+          <label htmlFor='name' className="col-lg-3 col-form-label form-control-label">Nombres :</label>
+          <input type="text" className="form-control" placeholder="Nombre de usuario"/>
+        </div>
+        <br />
+        <div className='form-group row'>
+          <label htmlFor='email' className='col-lg-3 col-form-label form-control-label'>Correo : &nbsp;</label>
+          <input type="email" name="email" className="form-control"></input>
+        </div>
+        <br />
+        <div className='form-group row'>
+          <label htmlFor='password' className='col-lg-3 col-form-label form-control-label'>Contraseña :</label>
+          <input type="text" name="password" class="form-control"></input>
+        </div>
+        
+        <div class="form-group row">
+          <div class="col-lg-12 text-center">
+            <input type="reset" class="btn btn-secondary" value="Cancel"/>
+            <input type="button" class="btn btn-primary"  value="Guardar"/>
+          </div>
+	      </div>
+
+        <div className="input-group form-group">
+							<div className="input-group-prepend">
+								<span className="input-group-text"><i className="fas fa-user"></i></span>
+							</div>
+							<input type="text" className="form-control" placeholder="Nombre de usuario"/>
+						</div>
       </form>
     );
   }
