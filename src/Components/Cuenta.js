@@ -91,7 +91,9 @@ class Cuenta extends Component {
   render() {
     return (
       <form onClick ={this.onCreateAd}>
-       
+       <div className="d-flex justify-content-center h-100">
+
+       </div>
       </form>
     );
   }
