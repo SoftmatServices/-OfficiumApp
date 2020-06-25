@@ -77,15 +77,10 @@ onCreateUser= async ()=>{
                  <h6>¿Dónde Vives?</h6>
               </div>
 
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-at"></i></span>
-                </div>
                 <div>
                   <Cuenta />
                 </div>
-              </div>
-
+             
               <div className="input-group form-group">
                 <div className="input-group-prepend">
                   <span className="input-group-text"><i className="fas fa-at"></i></span>
