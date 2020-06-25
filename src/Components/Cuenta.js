@@ -131,9 +131,6 @@ class Cuenta extends Component {
               </div>
             </form>
           </div>
-          <div className="card-footer">
-            
-          </div>
         </div>
 		  </div>
     );
