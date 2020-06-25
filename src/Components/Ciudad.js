@@ -58,7 +58,7 @@ const Ciudad = () => (
                     <option>Cúcuta</option>
                     <option>Barranquilla</option>
                     <option>Cali</option>
-                  </select >
+                  </select > 
                 </div>
     </div>
     
