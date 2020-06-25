@@ -2,8 +2,7 @@ import React from 'react';
 
 const Ciudad = () => (
 	              
-    <div className="col-6 col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2 bg-white">
-         <div className="title">
+    <div type="text" className="form-control" placeholder="Ciudad">
          <select>
             <option>Ingrese su Ciudad</option>
             <option>Medellín</option>
@@ -26,8 +25,7 @@ const Ciudad = () => (
             <option>Cúcuta</option>
             <option>Barranquilla</option>
             <option>Cali</option>
-          </select >
-         </div>             
+          </select >            
     </div>
 )
 export default Ciudad;
