@@ -81,7 +81,9 @@ onCreateUser= async ()=>{
                 <div className="input-group-prepend">
                   <span className="input-group-text"><i className="fas fa-at"></i></span>
                 </div>
-                <input Ciudad type="text" className="form-control" placeholder="Ciudad"/>
+                <div>
+                  <Cuenta />
+                </div>
               </div>
 
               <div className="input-group form-group">
