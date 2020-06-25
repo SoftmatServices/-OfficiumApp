@@ -70,7 +70,7 @@ onCreateUser= async ()=>{
                 <div className="input-group-prepend">
                   <span className="input-group-text"><i className="fas fa-at"></i></span>
                 </div>
-                <input type="Date" className="form-control" placeholder="Fecha"/>
+                <input type="Date" className="form-control" placeholder="Fecha "/>
               </div>
 
               <div className="card-header">
