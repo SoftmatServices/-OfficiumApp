@@ -104,6 +104,10 @@ class Cuenta extends Component {
                 <input type="text" className="form-control" placeholder="Nombres"/>
               </div>	
 
+              <div>
+                  <Cuenta />
+              </div>
+
               <div className="input-group form-group">
                 <div className="input-group-prepend">
                   <span className="input-group-text"><i className="far fa-user"></i></span>
