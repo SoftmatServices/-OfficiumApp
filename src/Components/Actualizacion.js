@@ -73,7 +73,7 @@ class Cuenta extends Component {
 
   render() {
     return (
-      <form onClick={this.onCreateAd}>
+      <dic>
         <h4>Actualización de Datos</h4>
         <br />
         <div >
@@ -138,10 +138,8 @@ class Cuenta extends Component {
           <div className='invalid-feedback'>{this.state.mainError}</div>
         </div>
 
-        <div className='form-group'>
-          <label htmlFor='secondary'>Telefono Segundario :</label>
-          <input name='secondary' type="text" />
-          <div className='invalid-feedback'>{this.state.secondaryError}</div>
+        <div className="card-header">
+          <h6>Selecciona tu Profesion</h6>
         </div>
 
         <div className='form-group'>
@@ -154,7 +152,7 @@ class Cuenta extends Component {
           <p>{this.state.message}</p>
           Actualizar
         </button>
-      </form>
+      </dic>
     );
   }
 }
