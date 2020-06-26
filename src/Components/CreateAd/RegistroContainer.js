@@ -27,10 +27,8 @@ class RegistroContainer extends React.Component {
 
     async componentDidMount() {
         const resCat = await getServicesCategoryAll()
-        console.log(resCat);
         this.setState({ CatId: resCat.data.servicecategory });
         const resPrf = await getServiceType()
-        console.log(resPrf);
         this.setState({ UserId: resPrf.data.servicetype });
 
     }

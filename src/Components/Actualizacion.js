@@ -1,20 +1,22 @@
-import React, {Component} from 'react';
-import Ciudad from './Ciudad';
-import Departamento from './Departamento';
+import React, { Component } from 'react';
+import { getDeptosAll, getMpios } from '../Services/Get'
+import { Redirect } from 'react-router-dom';
 
 
 class Cuenta extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      deptos: [],
+      mpios: [],
       name: '',
       email: '',
       surname: '',
-      city: '',
+      Mpios: '',
       nameError: '',
       emailError: '',
       surnameError: '',
-      cityError:'',
+      cityError: '',
       direction: '',
       main: '',
       secondary: '',
@@ -23,34 +25,60 @@ class Cuenta extends Component {
     };
   }
 
-onCreateUser= async ()=>{
-      let ad={
-            name:this.name.value,
-            description:this.refs.description.value,
-            serviceCatAdId:this.refs.serviceCatAdId.value,
-            serviceUserId:this.refs.serviceUserId.value
 
-          };
-    fetch('http://efactura.softmatservices.com/v1/createAd',{
-        method: 'POST',
-        headers:{'Content-type':'application/json'},
-        body: ad
-      }).then(r=>r.json()).then(res=>{
-        if(res){
-          this.setState({message:'New Employee is Created Successfully'});
-        }
-      });
-    }
-  
+  fillToSubscribeDeptos = (event) => {
+    this.setState({
+      department: event.target.value
+    });
+    this.onListMpios(this.state.department);
+    console.log(this.state.department)
+  }
+
+  fillToSubscribeMpios = (event) => {
+    this.setState({
+      Mpios: event.target.value
+    });
+
+  }
+
+  async componentDidMount() {
+    const resDeptos = await getDeptosAll()
+    this.setState({ deptos: resDeptos.data.deptos });
+  }
+
+  onListMpios = async (q) => {
+    const resMpios = await getMpios(q)
+    this.setState({ mpios: resMpios.data.mpios });
+  }
+
+  onCreateUser = async () => {
+    let ad = {
+      name: this.name.value,
+      description: this.refs.description.value,
+      serviceCatAdId: this.refs.serviceCatAdId.value,
+      serviceUserId: this.refs.serviceUserId.value
+
+    };
+    fetch('http://efactura.softmatservices.com/v1/createAd', {
+      method: 'POST',
+      headers: { 'Content-type': 'application/json' },
+      body: ad
+    }).then(r => r.json()).then(res => {
+      if (res) {
+        this.setState({ message: 'New Employee is Created Successfully' });
+      }
+    });
+  }
+
 
   render() {
     return (
       <form onClick={this.onCreateAd}>
-          <h4>Actualización de Datos</h4>
-          <br />
-          <div >
-            <label htmlFor='name'>Nombres :</label>
-            <input type="text" name="name"></input>
+        <h4>Actualización de Datos</h4>
+        <br />
+        <div >
+          <label htmlFor='name'>Nombres :</label>
+          <input type="text" name="name"></input>
         </div>
         <br />
         <div>
@@ -61,33 +89,52 @@ onCreateUser= async ()=>{
 
         <div>
           <label htmlFor='email'>Fecha de nacimiento: </label>
-          <input type="Date"  ref="birthdate"/>
-          
+          <input type="Date" ref="birthdate" />
+
         </div>
-        
+
         <h5>¿Dónde Vives?</h5>
 
         <div>
-          <label htmlFor='city'>Ciudad :</label>
-            <Ciudad />
+          <label> Departamento : <select
+            name="dep"
+            onChange={this.fillToSubscribeDeptos}>{
+              this.state.deptos.map(item =>
+                <option key={item.state_id} value={item.state_id}>
+                  {item.state}
+                </option>
+              )
+            }
+          </select>
+          </label>
+
         </div>
 
         <div>
-          <label htmlFor='department'>Departamento :</label>
-            <Departamento />
+          <label>Municipio: <select
+            name="mps"
+            onChange={this.fillToSubscribeMpios}>{
+              this.state.mpios.map(item =>
+                <option key={item.city_id} value={item.city_id}>
+                  {item.city}
+                </option>
+              )
+            }
+          </select>
+          </label>
           <div className='invalid-feedback'>{this.state.departmentError}</div>
         </div>
         <br />
         <div>
           <label htmlFor='mobilePhone'>Celular :</label>
-          <input name="mobilePhone" type="text"/>
+          <input name="mobilePhone" type="text" />
           <div className='invalid-feedback'>{this.state.directionError}</div>
         </div>
 
         <h5>Contactar</h5>
         <div>
           <label htmlFor='main'>Telefono Principal :</label>
-          <input  name='main'  type="text"/>
+          <input name='main' type="text" />
           <div className='invalid-feedback'>{this.state.mainError}</div>
         </div>
 
@@ -99,11 +146,11 @@ onCreateUser= async ()=>{
 
         <div className='form-group'>
           <label htmlFor='profession'>Cuel es tu Profesion :</label>
-          <input  name='profession' type="text"/>
+          <input name='profession' type="text" />
           <div className='invalid-feedback'>{this.state.professionError}</div>
         </div>
 
-        <button onClick = {this.onCreateAd}>
+        <button onClick={this.onCreateAd}>
           <p>{this.state.message}</p>
           Actualizar
         </button>

@@ -29,11 +29,17 @@ export async function getDeptosAll() {
 	return result
 }
 
+export async function getMpios(q) {
+	const result = await axios.get(`${baseUrl}/v1/getMpios/${q}`)
+	return result
+}
+
 export default {
 	getListasByPopular,
 	getListasBySearch,
 	getServiceType,
 	getServicesCategoryAll,
-	getDeptosAll
+	getDeptosAll,
+	getMpios
 
 }
