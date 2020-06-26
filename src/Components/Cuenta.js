@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class Cuenta extends Component {
   constructor(props) {
@@ -49,7 +49,7 @@ class Cuenta extends Component {
     const { surname } = this.state;
     this.setState({
       surnameError:
-      surname.length > 3 ? null : 'El apellido debe tener más de 3 caracteres.'
+        surname.length > 3 ? null : 'El apellido debe tener más de 3 caracteres.'
     });
   }
   validateEmail = () => {
@@ -64,29 +64,29 @@ class Cuenta extends Component {
     const { password } = this.state;
     this.setState({
       passwordError:
-      password.length > 3 ? null : 'El correo electrónico debe tener más de 3 caracteres'
+        password.length > 3 ? null : 'El correo electrónico debe tener más de 3 caracteres'
     });
   }
 
-  onCreateUser= async ()=>{
-    let ad={
-          name:this.name.value,
-          description:this.refs.description.value,
-          serviceCatAdId:this.refs.serviceCatAdId.value,
-          serviceUserId:this.refs.serviceUserId.value
+  onCreateUser = async () => {
+    let ad = {
+      name: this.name.value,
+      description: this.refs.description.value,
+      serviceCatAdId: this.refs.serviceCatAdId.value,
+      serviceUserId: this.refs.serviceUserId.value
 
-        };
-  fetch('http://efactura.softmatservices.com/v1/createAd',{
+    };
+    fetch('http://efactura.softmatservices.com/v1/createAd', {
       method: 'POST',
-      headers:{'Content-type':'application/json'},
+      headers: { 'Content-type': 'application/json' },
       body: ad
-    }).then(r=>r.json()).then(res=>{
-      if(res){
-        this.setState({message:'New Employee is Created Successfully'});
+    }).then(r => r.json()).then(res => {
+      if (res) {
+        this.setState({ message: 'New Employee is Created Successfully' });
       }
     });
   }
-  
+
 
   render() {
     return (
@@ -101,42 +101,42 @@ class Cuenta extends Component {
                 <div className="input-group-prepend">
                   <span className="input-group-text"><i className="fas fa-user"></i></span>
                 </div>
-                <input type="text" className="form-control" placeholder="Nombres"/>
-              </div>	
+                <input type="text" className="form-control" placeholder="Nombres" />
+              </div>
 
               <div>
-                  <Cuenta />
+                <Cuenta />
               </div>
 
               <div className="input-group form-group">
                 <div className="input-group-prepend">
                   <span className="input-group-text"><i className="far fa-user"></i></span>
                 </div>
-                <input type="text" className="form-control" placeholder="Apellidos"/>
+                <input type="text" className="form-control" placeholder="Apellidos" />
               </div>
-              
+
 
               <div className="input-group form-group">
                 <div className="input-group-prepend">
                   <span className="input-group-text"><i className="fas fa-at"></i></span>
                 </div>
-                <input type="password" className="form-control" placeholder="Correo"/>
+                <input type="password" className="form-control" placeholder="Correo" />
               </div>
 
               <div className="input-group form-group">
                 <div className="input-group-prepend">
                   <span className="input-group-text"><i className="fas fa-key"></i></span>
                 </div>
-                <input type="password" className="form-control" placeholder="Contraseña"/>
+                <input type="password" className="form-control" placeholder="Contraseña" />
               </div>
-            
+
               <div className="form-group">
-                <input type="submit" value="Registrarme" className="btn float-right login_btn"/>
+                <input type="submit" value="Registrarme" className="btn float-right login_btn" />
               </div>
             </form>
           </div>
         </div>
-		  </div>
+      </div>
     );
   }
 }
