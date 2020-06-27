@@ -8,40 +8,25 @@ class Cuenta extends Component {
             <h3>Regitra tus Datos</h3>
           </div>
           <div className="card-body">
-            <form>
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-user"></i></span>
-                </div>
+              <label> Nombres: 
                 <input type="text" className="form-control" placeholder="Nombres"/>
-              </div>	
+              </label>	
 
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="far fa-user"></i></span>
-                </div>
+              <label> Apellidos: 
                 <input type="text" className="form-control" placeholder="Apellidos"/>
-              </div>
-              
+              </label>
 
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-at"></i></span>
-                </div>
+              <label> Correo: 
                 <input type="password" className="form-control" placeholder="Correo"/>
-              </div>
+              </label>
 
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-key"></i></span>
-                </div>
+              <label> Contraseña: 
                 <input type="password" className="form-control" placeholder="Contraseña"/>
-              </div>
+              </label>
             
               <div className="form-group">
                 <input type="submit" value="Registrarme" className="btn float-right login_btn"/>
               </div>
-            </form>
           </div>
         </div>
       </div>
