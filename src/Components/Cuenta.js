@@ -8,16 +8,28 @@ class Cuenta extends Component {
             <h3>Regitra tus Datos</h3>
           </div>
           <div className="card-body">
-              <label> Nombres: 
-                <input type="text" className="form-control" placeholder="Nombres"/>
+              <label> Nombre y Apellido: 
+                <input type="text" className="form-control" placeholder="Nombre completo"/>
               </label>	
 
-              <label> Apellidos: 
-                <input type="text" className="form-control" placeholder="Apellidos"/>
+              <label> Correo electronico: 
+                <input type="text" className="form-control" placeholder="Correo electronico"/>
               </label>
 
-              <label> Correo: 
-                <input type="password" className="form-control" placeholder="Correo"/>
+              <label> Fecha de nacimiento: 
+                <input type="date" className="form-control" placeholder="Fecha den acimiento"/>
+              </label>
+
+              <label> Numero de celular: 
+                <input type="number" className="form-control" placeholder="Numero de celular"/>
+              </label>
+
+              <label> Departamento: 
+                <input type="text" className="form-control" placeholder="Departament"/>
+              </label>
+
+              <label> Ciudad: 
+                <input type="text" className="form-control" placeholder="Ciudad"/>
               </label>
 
               <label> Contraseña: 

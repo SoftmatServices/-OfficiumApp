@@ -30,8 +30,9 @@ class Cuenta extends Component {
     this.setState({
       department: event.target.value
     });
-    this.onListMpios(this.state.department);
-    console.log(this.state.department)
+    this.onListMpios(this.department);
+
+    console.log(this.department)
   }
 
   fillToSubscribeMpios = (event) => {
@@ -42,6 +43,10 @@ class Cuenta extends Component {
   }
 
   async componentDidMount() {
+    this.onListDeptos();
+  }
+
+  onListDeptos = async () => {
     const resDeptos = await getDeptosAll()
     this.setState({ deptos: resDeptos.data.deptos });
   }
@@ -98,9 +103,11 @@ class Cuenta extends Component {
         <div>
           <label> Departamento : <select
             name="dep"
-            onChange={this.fillToSubscribeDeptos}>{
+            onChange={this.fillToSubscribeDeptos}>
+            <option value= '0'>Seleccione un departamento</option>
+            {
               this.state.deptos.map(item =>
-                <option key={item.state_id} value={item.state_id}>
+                <option value={item.state_id}>
                   {item.state}
                 </option>
               )
@@ -113,7 +120,9 @@ class Cuenta extends Component {
         <div>
           <label>Municipio: <select
             name="mps"
-            onChange={this.fillToSubscribeMpios}>{
+            onChange={this.fillToSubscribeMpios}>
+            <option>Seleccione un municipio</option>
+            {
               this.state.mpios.map(item =>
                 <option key={item.city_id} value={item.city_id}>
                   {item.city}
