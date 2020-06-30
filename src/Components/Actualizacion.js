@@ -113,52 +113,7 @@ class Cuenta extends Component {
                 </div>
                 <input type="Date" className="form-control" placeholder="Fecha"/>
               </div>
-
-              <div className="card-header">
-                <h5>¿Dónde Vives?</h5>
-              </div>
-
-              <div className="card-header">
-                <h5>¿Dónde Vives?</h5>
-              </div>
-
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-at"></i></span>
-                  <select className="form-control"
-                   name="dep"
-                   onChange={this.fillToSubscribeDeptos}>
-                     <option value= '0'>Seleccione un Departamento</option>
-                     {
-                        this.state.deptos.map(item =>
-                          <option value={item.state_id}>
-                            {item.state}
-                         </option>
-                         )
-                         }
-                   </select>
-                </div>
-              </div>
-
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-at"></i></span>
-                  <select className="form-control"
-                   name="mps"
-                   onChange={this.fillToSubscribeMpios}>
-                   <option>Seleccione un municipio</option>
-                   {
-                     this.state.mpios.map(item =>
-                       <option key={item.city_id} value={item.city_id}>
-                         {item.city}
-                       </option>
-                     )
-                   }
-                   </select>
-                   <div className='invalid-feedback'>{this.state.departmentError}</div>
-                </div>
-              </div>
-            </from>
+              </from>
           </div>
         </div>
       </div>
