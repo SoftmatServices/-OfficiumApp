@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { getDeptosAll, getMpios } from '../Services/Get'
 import { Redirect } from 'react-router-dom';
+import Actualizar from './Actualizar';
 
 
-class Cuenta extends Component {
+class Actualizacion extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -116,9 +117,11 @@ class Cuenta extends Component {
               </from>
           </div>
         </div>
+
+        <Actualizar />
       </div>
     );
   }
 }
 
-export default Cuenta;
+export default Actualizacion;
