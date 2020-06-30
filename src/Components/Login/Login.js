@@ -49,7 +49,7 @@ render(){
 						No tienes una cuenta?<Link to="/Cuenta">Registrate</Link>					
 					</div>
 					<div className="d-flex justify-content-center links">
-						Olvidaste tu contraseña? <Link to="/Olvido">Recuperar</Link>
+						Olvidaste tu contraseña? <Link to="/Recuperacion">Recuperar</Link>
 					</div>
 				</div>
 			</div>
