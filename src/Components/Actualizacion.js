@@ -79,7 +79,7 @@ class Actualizacion extends Component {
   render() {
     return (
       <div className="d-flex justify-content-center h-100">
-        <div className="card">
+        <div className="card-header">
           <div className="card-header">
             <h4>Actualización de Datos</h4>
           </div>
