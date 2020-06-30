@@ -15,6 +15,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Olvido from "./Components/Olvido";
 
 
 function App(){
@@ -28,6 +29,7 @@ function App(){
 			<Route exact path="/RegistroContainer" component={RegistroContainer}/>
 			<Route exact path="/testAxios" component={testAxios}/>
 			<Route exact path="/Cuenta" component={Cuenta}/>
+			<Route exact path="/Olvido" component={Olvido}/>
 		</Router>
 		)
 }
