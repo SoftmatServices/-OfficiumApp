@@ -48,8 +48,8 @@ render(){
 					<div className="d-flex justify-content-center links">
 						No tienes una cuenta?<Link to="/Cuenta">Registrate</Link>					
 					</div>
-					<div className="d-flex justify-content-center">
-						<a href=" ">Olvidaste tu contraseña?</a>
+					<div className="d-flex justify-content-center links">
+						Olvidaste tu contraseña? <Link to="/Olvido">Recuperar</Link>
 					</div>
 				</div>
 			</div>
