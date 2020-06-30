@@ -8,37 +8,40 @@ class Cuenta extends Component {
             <h3>Regitra tus Datos</h3>
           </div>
           <div className="card-body">
-              <label> Nombre y Apellido: 
-                <input type="text" className="form-control" placeholder="Nombre completo"/>
-              </label>	
+            <form>
+              <div className="input-group form-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><i className="fas fa-user"></i></span>
+                </div>
+                <input type="text" className="form-control" placeholder="Nombres"/>
+              </div>	
 
-              <label> Correo electronico: 
-                <input type="text" className="form-control" placeholder="Correo electronico"/>
-              </label>
+              <div className="input-group form-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><i className="far fa-user"></i></span>
+                </div>
+                <input type="text" className="form-control" placeholder="Apellidos"/>
+              </div>
+              
 
-              <label> Fecha de nacimiento: 
-                <input type="date" className="form-control" placeholder="Fecha den acimiento"/>
-              </label>
+              <div className="input-group form-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><i className="fas fa-at"></i></span>
+                </div>
+                <input type="password" className="form-control" placeholder="Correo"/>
+              </div>
 
-              <label> Numero de celular: 
-                <input type="number" className="form-control" placeholder="Numero de celular"/>
-              </label>
-
-              <label> Departamento: 
-                <input type="text" className="form-control" placeholder="Departament"/>
-              </label>
-
-              <label> Ciudad: 
-                <input type="text" className="form-control" placeholder="Ciudad"/>
-              </label>
-
-              <label> Contraseña: 
+              <div className="input-group form-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text"><i className="fas fa-key"></i></span>
+                </div>
                 <input type="password" className="form-control" placeholder="Contraseña"/>
-              </label>
+              </div>
             
               <div className="form-group">
                 <input type="submit" value="Registrarme" className="btn float-right login_btn"/>
               </div>
+            </form>
           </div>
         </div>
       </div>
