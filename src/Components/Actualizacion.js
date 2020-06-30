@@ -78,90 +78,13 @@ class Cuenta extends Component {
 
   render() {
     return (
-      <dic>
-        <h4>Actualización de Datos</h4>
-        <br />
-        <div >
-          <label htmlFor='name'>Nombres :</label>
-          <input type="text" name="name"></input>
+      <div className="d-flex justify-content-center h-100">
+        <div className="card">
+          <div className="card-header">
+            <h4>Actualización de Datos</h4>
+          </div>
         </div>
-        <br />
-        <div>
-          <label htmlFor='email'>Correo : &nbsp;</label>
-          <input type="email" name="email"></input>
-        </div>
-        <br />
-
-        <div>
-          <label htmlFor='email'>Fecha de nacimiento: </label>
-          <input type="Date" ref="birthdate" />
-
-        </div>
-
-        <h5>¿Dónde Vives?</h5>
-
-        <div>
-          <label> Departamento : <select
-            name="dep"
-            onChange={this.fillToSubscribeDeptos}>
-            <option value= '0'>Seleccione un departamento</option>
-            {
-              this.state.deptos.map(item =>
-                <option value={item.state_id}>
-                  {item.state}
-                </option>
-              )
-            }
-          </select>
-          </label>
-
-        </div>
-
-        <div>
-          <label>Municipio: <select
-            name="mps"
-            onChange={this.fillToSubscribeMpios}>
-            <option>Seleccione un municipio</option>
-            {
-              this.state.mpios.map(item =>
-                <option key={item.city_id} value={item.city_id}>
-                  {item.city}
-                </option>
-              )
-            }
-          </select>
-          </label>
-          <div className='invalid-feedback'>{this.state.departmentError}</div>
-        </div>
-        <br />
-        <div>
-          <label htmlFor='mobilePhone'>Celular :</label>
-          <input name="mobilePhone" type="text" />
-          <div className='invalid-feedback'>{this.state.directionError}</div>
-        </div>
-
-        <h5>Contactar</h5>
-        <div>
-          <label htmlFor='main'>Telefono Principal :</label>
-          <input name='main' type="text" />
-          <div className='invalid-feedback'>{this.state.mainError}</div>
-        </div>
-
-        <div className="card-header">
-          <h6>Selecciona tu Profesion</h6>
-        </div>
-
-        <div className='form-group'>
-          <label htmlFor='profession'>Cuel es tu Profesion :</label>
-          <input name='profession' type="text" />
-          <div className='invalid-feedback'>{this.state.professionError}</div>
-        </div>
-
-        <button onClick={this.onCreateAd}>
-          <p>{this.state.message}</p>
-          Actualizar
-        </button>
-      </dic>
+      </div>
     );
   }
 }
