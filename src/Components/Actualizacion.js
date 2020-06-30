@@ -8,21 +8,11 @@ class Actualizacion extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      deptos: [],
-      mpios: [],
       name: '',
       email: '',
       surname: '',
-      Mpios: '',
       nameError: '',
-      emailError: '',
-      surnameError: '',
-      cityError: '',
-      direction: '',
-      main: '',
-      secondary: '',
-      profession: '',
-      department: ''
+      emailError: ''
     };
   }
 
