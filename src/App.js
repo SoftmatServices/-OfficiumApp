@@ -9,14 +9,13 @@ import Login from "./Components/Login/Login";
 import './css/Styles.css';
 import MnGen from "./MnGen";
 import MnUser from "./MnUser";
+import Olvido from "./Components/Olvido";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-import Olvido from "./Components/Olvido";
-
 
 function App(){
 	return (
