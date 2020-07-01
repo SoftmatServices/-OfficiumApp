@@ -134,7 +134,7 @@ class Actualizacion extends Component {
 
                 <div className="input-group form-group">
                     <div className="input-group-prepend">
-                    <span className="input-group-text"><i className="fas fa-store-alt"></i></span>
+                    <span className="input-group-text"><i className="fas fa-warehouse"></i></span>
                     <select className="form-control"
                     name="mps"
                     onChange={this.fillToSubscribeMpios}>
