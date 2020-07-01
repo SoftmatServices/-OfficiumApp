@@ -153,7 +153,7 @@ class Actualizacion extends Component {
 
                 <div className="input-group form-group">
                     <div className="input-group-prepend">
-                    <span className="input-group-text"><i className="fas fa-at"></i></span>
+                    <span className="input-group-text"><i className="fas fa-mobile"></i></span>
                     </div>
                     <input type="text" className="form-control" placeholder="Celular"/>
                 </div>
