@@ -134,7 +134,7 @@ class Actualizacion extends Component {
 
                 <div className="input-group form-group">
                     <div className="input-group-prepend">
-                    <span className="input-group-text"><i className="fas fa-at"></i></span>
+                    <span className="input-group-text"><i className="fas fa-store-alt"></i></span>
                     <select className="form-control"
                     name="mps"
                     onChange={this.fillToSubscribeMpios}>
@@ -160,7 +160,7 @@ class Actualizacion extends Component {
 
                 <div className="input-group form-group">
                   <div className="input-group-prepend">
-                    <span className="input-group-text"><i className="fas fa-user"></i></span>
+                    <span className="input-group-text"><i className="fas fa-user-graduate"></i></span>
                   </div>
                   <input type="text" className="form-control" placeholder="Cual es tu Profesion"/>
                 </div>
