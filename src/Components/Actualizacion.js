@@ -109,14 +109,14 @@ class Actualizacion extends Component {
 
               <div className="input-group form-group">
                 <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-at"></i></span>
+                  <span className="input-group-text"><i className="fas fa-calendar-alt"></i></span>
                 </div>
                 <input type="Date" className="form-control" placeholder="Fecha"/>
               </div>
 
               <div className="input-group form-group">
                     <div className="input-group-prepend">
-                    <span className="input-group-text"><i className="fas fa-at"></i></span>
+                    <span className="input-group-text"><i className="	fas fa-city"></i></span>
                     <select className="form-control"
                     name="dep"
                     onChange={this.fillToSubscribeDeptos}>
