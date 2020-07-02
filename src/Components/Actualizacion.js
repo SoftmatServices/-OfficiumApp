@@ -79,8 +79,8 @@ class Actualizacion extends Component {
   render() {
     return (
       <div className="d-flex justify-content-center h-100">
-        <div className="card-Styles">
-          <div className="card-header">
+        <div className="card-styles">
+          <div className="">
             <h4>Actualización de Datos</h4>
           </div>
           <div className="card-body">
