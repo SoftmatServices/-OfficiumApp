@@ -4,8 +4,8 @@ class Olvido extends React.Component {
 render(){
     return(
 		<div className="d-flex justify-content-center h-100">
-          <div className="card">
-            <div className="card-header">
+          <div className="card-email">
+            <div className="">
               <h3>Ingresa tu Correo</h3>
             </div>
           <div className="card-body">
