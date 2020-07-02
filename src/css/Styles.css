@@ -18,14 +18,13 @@ html,body{
     width: 400px;
     background-color: rgba(0,0,0,0.5) !important;
     }
-    .card-Styles{
-        height: 400px;
-        margin-top: auto;
-        margin-bottom: auto;
-        width: 400px;
-        background-color: rgba(0,0,0,0.5) !important;
-    }
-    
+    .card-styles{
+    height: 530px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 465px;
+    background-color: rgba(0,0,0,0.5) !important;
+    } 
     .social_icon span{
     font-size: 60px;
     margin-left: 10px;
