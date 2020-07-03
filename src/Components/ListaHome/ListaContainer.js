@@ -54,7 +54,6 @@ class ListaContainer extends React.Component {
 				   	</div>	
 			    </div>
 		    </div>
-	              
 		)
 	}
 }
