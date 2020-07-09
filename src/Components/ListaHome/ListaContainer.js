@@ -35,6 +35,18 @@ class ListaContainer extends React.Component {
 
 		return (
 			<div >
+				<section>
+					<div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
+						<div className="carousel-inner">
+							<div className="carousel-item active">
+								<div className="carousel-item active">
+								<img src="../Img/imagen.jpg" class="d-block w-100" alt="" width="1400" height="700"></img>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
 				<div className="container-fluid mt-4">
 		        	<div className="subcontainer">	
 		        		<Search handleSearch ={this.handleSearch}/>
