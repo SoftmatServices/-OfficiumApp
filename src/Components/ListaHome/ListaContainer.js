@@ -40,7 +40,7 @@ class ListaContainer extends React.Component {
 						<div className="carousel-inner">
 							<div className="carousel-item active">
 								<div className="carousel-item active">
-								<img src="../Img/imagen.jpg" class="d-block w-100" alt="" width="1400" height="700"></img>
+								<img src="../Img/imagen.jpg" class="d-block w-100" alt="" width="1300" height="700"></img>
 								</div>
 							</div>
 						</div>
