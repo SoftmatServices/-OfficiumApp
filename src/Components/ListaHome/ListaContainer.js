@@ -52,9 +52,8 @@ class ListaContainer extends React.Component {
 						</div>
 					</div>
 				</section>
-
+				<br/>
 				<section class="search-sec">
-					<div class="container">
 						<form action="#" method="post" novalidate="novalidate">
 							<div class="row">
 								<div class="col-lg-12">
@@ -83,7 +82,6 @@ class ListaContainer extends React.Component {
 								</div>
 							</div>
 						</form>
-					</div>
 				</section>
 
 				<div className="container-fluid mt-4">
