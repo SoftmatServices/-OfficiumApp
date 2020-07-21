@@ -56,42 +56,27 @@ class ListaContainer extends React.Component {
 				<br/>
 				<br/>
 				<br/>
-				<section class="search-sec">
+				<section className="search-sec">
 						<form action="#" method="post" novalidate="novalidate">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="row">
-										<div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                            				<input type="text" class="form-control search-slt" placeholder="Categoria"/>
+							<div className="row">
+								<div className="col-lg-12">
+									<div className="row">
+										<div className="col-lg-3 col-md-3 col-sm-12 p-0">
+                            				<input type="text" className="form-control search-slt" placeholder="Categoria"/>
                         				</div>
-										<div class="col-lg-3 col-md-3 col-sm-12 p-0">
+										<div className="col-lg-3 col-md-3 col-sm-12 p-0">
                             				<input type="text" class="form-control search-slt" placeholder="Servicio"/>
                         				</div>
-										<div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                            				<select class="form-control search-slt" id="exampleFormControlSelect1">
-												<option>Busqueda</option>
-												<option>Example one</option>
-												<option>Example one</option>
-												<option>Example one</option>
-												<option>Example one</option>
-												<option>Example one</option>
-												<option>Example one</option>
-                            				</select>
-                        				</div>
-										<div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                            				<button type="button" class="btn btn-danger wrn-btn">Buscar</button>
-                        				</div>
+										<div className="col-lg-3 col-md-3 col-sm-12 p-0">
+		        							<div className="subcontainer">	
+		        								<Search handleSearch ={this.handleSearch}/>
+		        							</div>
+	        							</div>
 									</div>
 								</div>
 							</div>
 						</form>
 				</section>
-
-				<div className="container-fluid mt-4">
-		        	<div className="subcontainer">	
-		        		<Search handleSearch ={this.handleSearch}/>
-		        	</div>
-	        	</div>
 				<div className="container bg-light">
 					<div className="row justify-content-center"> 
 				        {listas.map((list) => <Lista
