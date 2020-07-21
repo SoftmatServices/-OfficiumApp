@@ -19,6 +19,7 @@ class Search extends React.Component{
         const {handleSearch} = this.props
         const {search} = this.state
         return(
+            
             <div className="row justify-content-center" >
                 <div className="col-lg-3 col-md-3 col-sm-12 p-0">
                     <input className="form-control search-slt" placeholder="Busqueda"
@@ -26,6 +27,12 @@ class Search extends React.Component{
                             type="text" 
                             onChange={this.handleChange}
                             />
+                </div>
+                <div className="col-lg-3 col-md-3 col-sm-12 p-0">
+                    <input type="text" className="form-control search-slt" placeholder="Categoria"/>
+                </div>
+                <div className="col-lg-3 col-md-3 col-sm-12 p-0">
+                    <input type="text" class="form-control search-slt" placeholder="Servicio"/>
                 </div>
                 <div className="col-md-2 col-sm-6">
                         <button type="button" 
