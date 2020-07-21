@@ -58,6 +58,7 @@ class ListaContainer extends React.Component {
 		        		<Search handleSearch ={this.handleSearch}/>
 		        	</div>
 	        	</div>
+				<br/>
 				<div className="container bg-light">
 					<div className="row justify-content-center"> 
 				        {listas.map((list) => <Lista
