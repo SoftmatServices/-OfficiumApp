@@ -53,30 +53,11 @@ class ListaContainer extends React.Component {
 					</div>
 				</section>
 				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<section className="search-sec">
-						<form action="#" method="post" novalidate="novalidate">
-							<div className="row">
-								<div className="col-lg-12">
-									<div className="row">
-										<div className="col-lg-3 col-md-3 col-sm-12 p-0">
-                            				<input type="text" className="form-control search-slt" placeholder="Categoria"/>
-                        				</div>
-										<div className="col-lg-3 col-md-3 col-sm-12 p-0">
-                            				<input type="text" class="form-control search-slt" placeholder="Servicio"/>
-                        				</div>
-										<div className="col-lg-3 col-md-3 col-sm-12 p-0">
-		        							<div className="subcontainer">	
-		        								<Search handleSearch ={this.handleSearch}/>
-		        							</div>
-	        							</div>
-									</div>
-								</div>
-							</div>
-						</form>
-				</section>
+				<div className="container-fluid mt-4">
+		        	<div className="subcontainer">	
+		        		<Search handleSearch ={this.handleSearch}/>
+		        	</div>
+	        	</div>
 				<div className="container bg-light">
 					<div className="row justify-content-center"> 
 				        {listas.map((list) => <Lista
