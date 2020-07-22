@@ -99,7 +99,7 @@ html,body{
 
     /*Estilo para el container*/
     .search-sec{
-        padding: 2rem;
+        padding: 3rem;
     }
     .search-slt{
         display: block;
@@ -124,7 +124,7 @@ html,body{
     @media (min-width: 992px){
         .search-sec{
             position: relative;
-            top: -114px;
+            top: 10px;
             background: white(26, 70, 104, 0.51);
         }
     }
