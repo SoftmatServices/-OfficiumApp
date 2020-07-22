@@ -46,8 +46,8 @@ class ListaContainer extends React.Component {
                 					<img src="../Img/imagen.jpg" class="d-block w-100" alt="..." ></img>
             					</div>
 								<div class="carousel-item">
-               						<img src="../Img/imagen.jpg" class="d-block w-100" alt="..."></img>
-           						 </div>
+    								<img src="../Img/imagen.jpg" class="d-block w-100" alt="..."></img>
+    							</div>
 							</div>
 						</div>
 					</div>
@@ -59,6 +59,29 @@ class ListaContainer extends React.Component {
 		        	</div>
 	        	</div>
 				<br/>
+				<div className="w3-content w3-padding">
+					<div className="w3-row- padding">
+						<div className="w3-col l3 m6 w3-margin-bottom">
+							<div className="w3-display-container">
+								<div className="w3-display-topleft w3-black w3-padding">Albañil</div>
+									<img src="../Img/SVG/labor.svg" alt="Albanil" width="100" height="100"></img>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className="w3-content w3-padding">
+					<div className="w3-row- padding">
+						<div className="w3-col l3 m6 w3-margin-bottom">
+							<div className="w3-display-container">
+								<div className="w3-display-topleft w3-black w3-padding">Arquitectos </div>
+									<img src="../Img/SVG/obrero.svg" alt="Arquitectos " width="100" height="100"></img>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
 				<div className="container bg-light">
 					<div className="row justify-content-center"> 
 				        {listas.map((list) => <Lista
@@ -69,8 +92,8 @@ class ListaContainer extends React.Component {
 							serviceCategoryCdId = {list.service_category_ad_id}
 							serviceUserId = {list.service_user_id}
 						/>)
-				   		}
-				   	</div>	
+						}
+				</div>	
 			    </div>
 		    </div>
 		)
