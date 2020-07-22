@@ -59,21 +59,6 @@ class ListaContainer extends React.Component {
 		        	</div>
 	        	</div>
 				<br/>
-
-				<div class="w3-content w3-padding">
-					<div class="w3-container w3-padding-32" id="projects">
-        				<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-            		</div>
-
-					<div class="w3-row-padding">
-						<div class="w3-col l3 m6 w3-margin-bottom">
-                			<div class="w3-display-container">
-            					<div class="w3-display-topleft w3-black w3-padding">Mascotas</div>
-	                				<img src="../Img/SVG/001-wallet.svg" width="100" height="200" alt="Free Website Template by Free-Template.co" className="img-fluid w-25 mb-4"></img>
-                				</div>
-              			</div>
-					</div>
-				</div>
 				<div className="container bg-light">
 					<div className="row justify-content-center"> 
 				        {listas.map((list) => <Lista
