@@ -59,9 +59,6 @@ class ListaContainer extends React.Component {
 		        	</div>
 	        	</div>
 				<br/>
-				<br/>
-				<br/>
-				<br/>
 				<section class="search-sec">
 					<div class="w3-content w3-padding">
 						<div class="w3-container w3-padding-32" id="projects">
