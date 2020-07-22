@@ -29,7 +29,12 @@ class Search extends React.Component{
                             />
                 </div>
                 <div className="col-lg-3 col-md-3 col-sm-12 p-0">
-                    <input type="text" className="form-control search-slt" placeholder="Categoria"/>
+                        <select class="form-control search-slt" id="exampleFormControlSelect1">
+                            <option>Categoria</option>
+                            <option>Albañil</option>
+                            <option>Arquitecto</option>
+                            <option>Automovil</option>
+                        </select>
                 </div>
                 <div className="col-lg-3 col-md-3 col-sm-12 p-0">
                     <input type="text" class="form-control search-slt" placeholder="Servicio"/>
