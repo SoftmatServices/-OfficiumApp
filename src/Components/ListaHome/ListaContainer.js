@@ -69,7 +69,7 @@ class ListaContainer extends React.Component {
 						<div class="w3-col l3 m6 w3-margin-bottom">
                 			<div class="w3-display-container">
             					<div class="w3-display-topleft w3-black w3-padding">Mascotas</div>
-	                				<img src="../Img/mascotas.jpg" alt="House" width="200" height="250"></img>
+	                				<img src="../Img/SVG/001-wallet.svg" width="100" height="200" alt="Free Website Template by Free-Template.co" className="img-fluid w-25 mb-4"></img>
                 				</div>
               			</div>
 					</div>
