@@ -1,8 +1,9 @@
 import React from 'react';
 import Lista from './Lista';
-import '../../css/List.css';
-import '../../css/Item.css';
+//import '../../css/List.css';
+//import '../../css/Item.css';
 import Search from './Search';
+import Menu from './Menu';
 import {getListasByPopular, getListasBySearch} from '../../Services/Get'
 
 class ListaContainer extends React.Component {
@@ -59,34 +60,9 @@ class ListaContainer extends React.Component {
 		        	</div>
 	        	</div>
 				<br/>
-				<section class="search-sec">
-					<div class="w3-content w3-padding">
-						<div class="w3-container w3-padding-32" id="Servicios">
-              				<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Servicios</h3>
-            			</div>
-						<div className="w3-content w3-padding">
-							<div className="w3-row- padding">
-								<div className="w3-col l3 m6 w3-margin-bottom">
-									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Albañil</div>
-											<img src="../Img/SVG/labor.svg" alt="Albanil" width="100" height="100"></img>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="w3-content w3-padding">
-							<div className="w3-row- padding">
-								<div className="w3-col l3 m6 w3-margin-bottom">
-									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Arquitectos </div>
-											<img src="../Img/SVG/obrero.svg" alt="Arquitectos " width="100" height="100"></img>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+				<div>
+					<Menu/>
+				</div>
 		    </div>
 		)
 	}
