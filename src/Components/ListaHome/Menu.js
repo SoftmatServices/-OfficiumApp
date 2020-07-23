@@ -12,8 +12,8 @@ class Menu extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Albañil</div>
-											<img src="../Img/SVG/labor.svg" alt="Albanil" width="100" height="200"></img>
+										<div className="w3-display-topleft w3-black w3-padding">Albañiles</div>
+											<img src="../Img/SVG/labor.svg" alt="Albañiles" width="100" height="200"></img>
 									</div>
 								</div>
 							</div>
@@ -23,8 +23,8 @@ class Menu extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Arquitecto</div>
-											<img src="../Img/SVG/obrero.svg" alt="Arquitecto" width="100" height="200"></img>
+										<div className="w3-display-topleft w3-black w3-padding">Arquitectos</div>
+											<img src="../Img/SVG/obrero.svg" alt="Arquitectos" width="100" height="200"></img>
 									</div>
 								</div>
 							</div>
@@ -34,8 +34,8 @@ class Menu extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Automovil</div>
-											<img src="../Img/SVG/coche.svg" alt="Automovil" width="100" height="200"></img>
+										<div className="w3-display-topleft w3-black w3-padding">Automóviles</div>
+											<img src="../Img/SVG/coche.svg" alt="Automóviles" width="100" height="200"></img>
 									</div>
 								</div>
 							</div>
@@ -46,7 +46,7 @@ class Menu extends React.Component {
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
 										<div className="w3-display-topleft w3-black w3-padding">Belleza</div>
-											<img src="../Img/SVG/moda.svg" alt="Belleza" width="100" height="200"></img>
+											<img src="../Img/SVG/piel.svg" alt="Belleza" width="100" height="200"></img>
 									</div>
 								</div>
 							</div>
@@ -56,8 +56,8 @@ class Menu extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Carpinteria</div>
-											<img src="../Img/SVG/Carpinteria.svg" alt="Carpinteria" width="100" height="200"></img>
+										<div className="w3-display-topleft w3-black w3-padding">Carpinteros</div>
+											<img src="../Img/SVG/Carpinteria.svg" alt="Carpinteros" width="100" height="200"></img>
 									</div>
 								</div>
 							</div>
@@ -67,8 +67,8 @@ class Menu extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Cerajero</div>
-											<img src="../Img/SVG/llave.svg" alt="Cerajero" width="100" height="200"></img>
+										<div className="w3-display-topleft w3-black w3-padding">Cerrajeros</div>
+											<img src="../Img/SVG/llave.svg" alt="Cerrajeros" width="100" height="200"></img>
 									</div>
 								</div>
 							</div>
@@ -89,8 +89,8 @@ class Menu extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Electricista</div>
-											<img src="../Img/SVG/electricista.svg" alt="Electricista" width="100" height="200"></img>
+										<div className="w3-display-topleft w3-black w3-padding">Electricistas</div>
+											<img src="../Img/SVG/idea.svg" alt="Electricistas" width="100" height="200"></img>
 									</div>
 								</div>
 							</div>
@@ -100,8 +100,8 @@ class Menu extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Instalación</div>
-											<img src="../Img/SVG/mantenimiento.svg" alt="Instalación" width="100" height="200"></img>
+										<div className="w3-display-topleft w3-black w3-padding">Reparaciones</div>
+											<img src="../Img/SVG/mantenimiento.svg" alt="Reparaciones" width="100" height="200"></img>
 									</div>
 								</div>
 							</div>
