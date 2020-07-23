@@ -99,7 +99,7 @@ html,body{
 
     /*Estilo para el container*/
     .search-sec{
-        padding: 3rem;
+        padding: 2rem;
     }
     .search-slt{
         display: block;
@@ -110,7 +110,7 @@ html,body{
         background-color: #fff;
         background-image: none;
         border: 1px solid #ccc;
-        height: calc(3rem + 1px) !important;
+        height: calc(3rem + 2px) !important;
         border-radius:0;
     }
     .wrn-btn{
@@ -118,13 +118,13 @@ html,body{
         font-size: 16px;
         font-weight: 400;
         text-transform: capitalize;
-        height: calc(3rem + 1px) !important;
+        height: calc(3rem + 2px) !important;
         border-radius:0;
     }
     @media (min-width: 992px){
         .search-sec{
             position: relative;
-            top: -114px;
+            top: 114px;
             background: white(26, 70, 104, 0.51);
         }
     }
