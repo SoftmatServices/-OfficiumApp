@@ -56,8 +56,52 @@ class Menu extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
+										<div className="w3-display-topleft w3-black w3-padding">Carpinteria</div>
+											<img src="../Img/SVG/Carpinteria.svg" alt="Carpinteria" width="100" height="200"></img>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div className="w3-row- padding">
+							<div className="w3-row- padding">
+								<div className="w3-col l3 m6 w3-margin-bottom">
+									<div className="w3-display-container">
+										<div className="w3-display-topleft w3-black w3-padding">Cerajero</div>
+											<img src="../Img/SVG/llave.svg" alt="Cerajero" width="100" height="200"></img>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div className="w3-row- padding">
+							<div className="w3-row- padding">
+								<div className="w3-col l3 m6 w3-margin-bottom">
+									<div className="w3-display-container">
 										<div className="w3-display-topleft w3-black w3-padding">Entrenadores</div>
 											<img src="../Img/SVG/velocidad.svg" alt="Entrenadores" width="100" height="200"></img>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div className="w3-row- padding">
+							<div className="w3-row- padding">
+								<div className="w3-col l3 m6 w3-margin-bottom">
+									<div className="w3-display-container">
+										<div className="w3-display-topleft w3-black w3-padding">Electricista</div>
+											<img src="../Img/SVG/electricista.svg" alt="Electricista" width="100" height="200"></img>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div className="w3-row- padding">
+							<div className="w3-row- padding">
+								<div className="w3-col l3 m6 w3-margin-bottom">
+									<div className="w3-display-container">
+										<div className="w3-display-topleft w3-black w3-padding">Instalación</div>
+											<img src="../Img/SVG/mantenimiento.svg" alt="Instalación" width="100" height="200"></img>
 									</div>
 								</div>
 							</div>
