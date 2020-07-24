@@ -1,7 +1,8 @@
 html,body{
-    background-image: url('../Img/60113.jpg');
+    background-image: url('');
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #ececec;;
     height: 100%;
     font-family: 'Numans', sans-serif;
     }
