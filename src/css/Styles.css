@@ -126,12 +126,12 @@ html,body{
         .search-sec{
             position: relative;
             top: 114px;
-            background: white(26, 70, 104, 0.51);
+            background: #ed7b2d(26, 70, 104, 0.51);
         }
     }
     
     @media (max-width: 992px){
         .search-sec{
-            background: #1A4668;
+            background: #ed7b2d;
         }
     }
