@@ -135,12 +135,3 @@ html,body{
             background: #1A4668;
         }
     }
-
-    .circulo search-sec {
-        width: 100px;
-        height: 100px;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        background: #5cb85c;
-   }
