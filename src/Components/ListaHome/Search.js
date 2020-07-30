@@ -41,8 +41,9 @@ class Search extends React.Component{
                 </div>
                 <div className="col-md-2 col-sm-6">
                         <button type="button" 
-                                className="btn btn-danger wrn-btn" 
-                                onClick={() => handleSearch(search)}>Buscar</button>
+                            className="btn btn-danger wrn-btn" 
+                            onClick={() => handleSearch(search)}>Buscar
+                        </button>
                 </div>
             </div>
         );
