@@ -51,4 +51,4 @@ class ListaContainer extends React.Component {
 	}
 }
 
-export default ListaContainer
+export default ListaContainer;
