@@ -3,8 +3,8 @@ class Menu extends React.Component {
     render(){
         return  (
             <div>
-                <section class="search-sec">
-					<div class="w3-content w3-padding">
+                <section>
+					<div className="w3-content w3-padding">
 						<div className="w3-row- padding">
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
