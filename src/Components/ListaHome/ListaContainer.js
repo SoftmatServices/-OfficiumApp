@@ -37,16 +37,8 @@ class ListaContainer extends React.Component {
 
 		return (
 			<div>
-				<div className="container-fluid mt-4">
-		        	<div className="subcontainer">	
-		        		<Search handleSearch ={this.handleSearch}/>
-		        	</div>
-	        	</div>
-				<br/>
-				<div>
-					<Menu/>
-				</div>
-		    </div>
+				<Menu/>
+			</div>
 		)
 	}
 }
