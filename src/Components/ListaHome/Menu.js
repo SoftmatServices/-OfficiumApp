@@ -5,9 +5,6 @@ class Menu extends React.Component {
             <div>
                 <section class="search-sec">
 					<div class="w3-content w3-padding">
-						<div class="w3-container w3-padding-32" id="Servicios">
-                            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Servicios</h3>
-            			</div>
 						<div className="w3-row- padding">
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
