@@ -9,6 +9,7 @@ import Login from "./Components/Login/Login";
 import './css/Styles.css';
 import MnGen from "./MnGen";
 import MnUser from "./MnUser";
+import Albaniles from "./Components/Servicios/Albaniles";
 import Recuperacion from "./Components/Recuperacion";
 import {
   BrowserRouter as Router,
@@ -29,6 +30,7 @@ function App(){
 			<Route exact path="/testAxios" component={testAxios}/>
 			<Route exact path="/Cuenta" component={Cuenta}/>
 			<Route exact path="/Recuperacion" component={Recuperacion}/>
+			<Route exact path="/Albaniles" component={Albaniles}/>
 		</Router>
 		)
 }
