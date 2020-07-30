@@ -2,6 +2,7 @@ import React from 'react';
 import Lista from './Lista';
 //import '../../css/List.css';
 //import '../../css/Item.css';
+import '../../css/Servicios.css';
 import Search from './Search';
 import Menu from './Menu';
 import {getListasByPopular, getListasBySearch} from '../../Services/Get'
