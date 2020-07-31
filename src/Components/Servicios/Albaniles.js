@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
-class Albaniles extends Component{
-    render(){
-        return(
+import '../../css/Latera.css';
+class Albaniles extends Component {
+    render() {
+        return (
             <div>
-				
-			</div>
+                
+            </div>
         );
     }
 }
