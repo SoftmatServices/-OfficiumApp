@@ -2,7 +2,6 @@ import React from 'react';
 import Lista from './Lista';
 import '../../css/List.css';
 import '../../css/Item.css';
-
 import Search from './Search';
 import {getListasByPopular, getListasBySearch} from '../../Services/Get'
 
@@ -35,17 +34,46 @@ class ListaContainer extends React.Component {
 		}
 
 		return (
-			<div>
+			<div >
+				<section>
+					<div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
+						<div className="carousel-inner">
+							<div className="carousel-item active">
+								<div className="carousel-item active">
+									<img src="../Img/imagen.jpg" class="d-block w-100" alt="" width="1400" height="700"></img>
+								</div>
+								<div class="carousel-item">
+                					<img src="../Img/imagen.jpg" class="d-block w-100" alt="..." ></img>
+            					</div>
+								<div class="carousel-item">
+               				  	   <img src="../Img/imagen.jpg" class="d-block w-100" alt="..."></img>
+           						</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
 				<div className="container-fluid mt-4">
 		        	<div className="subcontainer">	
 		        		<Search handleSearch ={this.handleSearch}/>
 		        	</div>
 	        	</div>
-				<br/>
-				
+				<div className="container bg-light">
+					<div className="row justify-content-center"> 
+				        {listas.map((list) => <Lista
+				        	//key = {list.string()}
+				        	name = {list.name} 
+				        	category = {list.category}
+							description = {list.description}
+							serviceCategoryCdId = {list.service_category_ad_id}
+							serviceUserId = {list.service_user_id}
+						/>)
+				   		}
+				   	</div>	
+			    </div>
 		    </div>
 		)
 	}
 }
 
-export default ListaContainer;
+export default ListaContainer
