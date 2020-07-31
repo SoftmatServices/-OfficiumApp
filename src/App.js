@@ -10,6 +10,7 @@ import './css/Styles.css';
 import MnGen from "./MnGen";
 import MnUser from "./MnUser";
 import Albaniles from "./Components/Servicios/Albaniles";
+import Menus from "./Components/Servicios/Menus";
 import Recuperacion from "./Components/Recuperacion";
 import {
   BrowserRouter as Router,
@@ -17,6 +18,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Menu from "./Components/Servicios/Menus";
 
 function App(){
 	return (
@@ -31,6 +33,7 @@ function App(){
 			<Route exact path="/Cuenta" component={Cuenta}/>
 			<Route exact path="/Recuperacion" component={Recuperacion}/>
 			<Route exact path="/Albaniles" component={Albaniles}/>
+			<Route exact path="/Menus" component={Menus}/>
 		</Router>
 		)
 }
