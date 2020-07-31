@@ -1,10 +1,9 @@
 import React from 'react';
 import Lista from './Lista';
-//import '../../css/List.css';
-//import '../../css/Item.css';
-import '../../css/Servicios.css';
+import '../../css/List.css';
+import '../../css/Item.css';
+
 import Search from './Search';
-import Menu from './Menu';
 import {getListasByPopular, getListasBySearch} from '../../Services/Get'
 
 class ListaContainer extends React.Component {
@@ -37,8 +36,14 @@ class ListaContainer extends React.Component {
 
 		return (
 			<div>
-				<Menu/>
-			</div>
+				<div className="container-fluid mt-4">
+		        	<div className="subcontainer">	
+		        		<Search handleSearch ={this.handleSearch}/>
+		        	</div>
+	        	</div>
+				<br/>
+				
+		    </div>
 		)
 	}
 }
