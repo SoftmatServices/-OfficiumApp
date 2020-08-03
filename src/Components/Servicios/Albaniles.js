@@ -55,7 +55,6 @@ class Albaniles extends Component {
                     <ListaContainer />
                 </div>
             </div>
-
         );
     }
 }
