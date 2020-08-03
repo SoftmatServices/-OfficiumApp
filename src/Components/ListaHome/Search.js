@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../css/Menus.css';
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+//import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import PropTypes from 'prop-types';
 
 class Search extends React.Component{
