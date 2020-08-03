@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../css/Menus.css';
-//import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import PropTypes from 'prop-types';
 
 class Search extends React.Component{
@@ -20,7 +20,7 @@ class Search extends React.Component{
         const {search} = this.state
         return(
             <div>
-                <section className="search-sec">
+                <section>
                     <div>
                         <form action="#" method="post" novalidate="novalidate">
                             <div className="row">
