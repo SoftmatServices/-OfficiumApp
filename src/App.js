@@ -10,6 +10,7 @@ import './css/Styles.css';
 import MnGen from "./MnGen";
 import MnUser from "./MnUser";
 import Albaniles from "./Components/Servicios/Albaniles";
+import Arquitectos from "./Components/Servicios/Arquitectos";
 import Menus from "./Components/Servicios/Menus";
 import Recuperacion from "./Components/Recuperacion";
 import {
@@ -33,6 +34,7 @@ function App(){
 			<Route exact path="/Cuenta" component={Cuenta}/>
 			<Route exact path="/Recuperacion" component={Recuperacion}/>
 			<Route exact path="/Albaniles" component={Albaniles}/>
+			<Route exact path="/Arquitectos" component={Arquitectos}/>
 			<Route exact path="/Menus" component={Menus}/>
 		</Router>
 		)
