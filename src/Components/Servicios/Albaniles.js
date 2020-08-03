@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import '../../css/Latera.css';
-import '../../css/List.css';
-import '../../css/Item.css';
 import ListaContainer from '../ListaHome/ListaContainer';
 class Albaniles extends Component {
     render() {
