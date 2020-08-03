@@ -10,21 +10,42 @@ class Albaniles extends Component {
                             <h3>Albañiles</h3>
                         </div>
                         <ul class="list-unstyled components">
-                            <p>Dummy Heading</p>
+                            <p>Bienvenidos</p>
                             <li class="active">
-                                <a href="#menu">Animación</a>
+                                <a href="#menu">Arquitectos</a>
                             </li>
                             <li>
-                                <a href="#menu">Ilustración</a>
+                                <a href="#menu">Automóviles</a>
                             </li>
                             <li>
-                                <a href="#menu">Blog</a>
+                                <a href="#menu">Belleza</a>
                             </li>
                             <li>
-                                <a href="#menu">Acerca</a>
+                                <a href="#menu">Carpinteros</a>
                             </li>
                             <li>
-                                <a href="#menu">Contacto</a>
+                                <a href="#menu">Cerrajeros</a>
+                            </li>
+                            <li class="active">
+                                <a href="#menu">Entrenadores</a>
+                            </li>
+                            <li>
+                                <a href="#menu">Electricistas</a>
+                            </li>
+                            <li>
+                                <a href="#menu">Reparaciones</a>
+                            </li>
+                            <li>
+                                <a href="#menu">Limpieza</a>
+                            </li>
+                            <li>
+                                <a href="#menu">Pintores</a>
+                            </li>
+                            <li class="active">
+                                <a href="#menu">Plomeria</a>
+                            </li>
+                            <li>
+                                <a href="#menu">Tecnicos</a>
                             </li>
                         </ul>
                     </nav>
