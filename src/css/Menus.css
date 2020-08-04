@@ -14,11 +14,11 @@
     }
 }
 .search-slt{
-    height: calc(2rem + 2px) !important;
+    height: calc(2rem + 1px) !important;
     border-radius:0;
 }
 
 .wrn-btn{
-    height: calc(2rem + 2px) !important;
+    height: calc(2rem + 1px) !important;
     border-radius:0;
 }
