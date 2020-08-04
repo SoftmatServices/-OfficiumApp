@@ -24,7 +24,7 @@ import Menu from "./Components/Servicios/Menus";
 function App(){
 	return (
 		<Router>
-			<Route exact path="/" component={MnGen}/>
+			<Route exact path="/" component={Menus}/>
 			<Route exact path="/MnGen" component={MnGen}/>
 			<Route exact path="/MnUser" component={MnUser}/>
 			<Route exact path="/Login" component={Login}/>
