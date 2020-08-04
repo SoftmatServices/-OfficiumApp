@@ -16,7 +16,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Albañiles</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Albaniles">Albañiles</Link></div>
 										<img src="../Img/SVG/labor.svg" alt="Albañiles" width="100" height="200"></img>
 									</div>
 								</div>
@@ -27,7 +27,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Arquitectos</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Arquitectos">Arquitectos</Link></div>
 										<img src="../Img/SVG/obrero.svg" alt="Arquitectos" width="100" height="200"></img>
 									</div>
 								</div>
