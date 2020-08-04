@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/Menus.css';
+import '../../css/Letter.css';
 import Servicio from './Servicio';
 class Menus extends React.Component {
 	render() {
@@ -11,9 +11,6 @@ class Menus extends React.Component {
 							<div class="row">
 								<div class="col-lg-12">
 									<div class="row">
-										<div class="col-lg-3 col-md-3 col-sm-12 p-0">
-											<input type="text" class="form-control search-slt" placeholder="Categoria" />
-										</div>
 										<div class="col-lg-3 col-md-3 col-sm-12 p-0">
 											<input type="text" class="form-control search-slt" placeholder="Servicio" />
 										</div>
