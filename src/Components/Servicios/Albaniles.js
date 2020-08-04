@@ -19,9 +19,7 @@ class Albaniles extends Component {
                         <div className="sidebar-header">
                             <h3>Albañiles</h3>
                         </div>
-                        <ul class="list-unstyled components">
-                            
-                            
+                        <ul className="list-unstyled components">
                             <p>Bienvenidos</p>
                             <li className="active">
                                 <Link to="/Arquitectos">Arquitectos</Link>
