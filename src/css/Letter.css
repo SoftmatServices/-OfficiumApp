@@ -1,0 +1,24 @@
+.search-sec{
+    padding: 2rem;
+    right: 200px;
+}
+.search-slt{
+    height: calc(3rem + 1.5px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    height: calc(3rem + 1.5px) !important;
+    border-radius:0;
+}
+@media (min-width: 992px){
+    .search-sec{
+        position: relative;
+        top: auto;
+    }
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
+}
