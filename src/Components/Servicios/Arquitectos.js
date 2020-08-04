@@ -12,7 +12,7 @@ class Arquitectos extends Component {
                             <h3>Arquitectos</h3>
                         </div>
                         <ul className="list-unstyled components">
-                            <p>Bienvenidos</p>
+                            <p>Menu</p>
                             <li className="active">
                                 <a href="#menu">Albañiles</a>
                             </li>
