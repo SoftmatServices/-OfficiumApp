@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../css/Latera.css';
-import '../../css/Menu.css';
+import '../../css/Menus.css';
 import ListaContainer from '../ListaHome/ListaContainer';
 class Arquitectos extends Component {
     render() {
