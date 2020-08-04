@@ -8,7 +8,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
-class Arquitectos extends Component {
+class Entrenadores extends Component {
     render() {
         return (
             <div>
@@ -65,4 +65,4 @@ class Arquitectos extends Component {
         );
     }
 }
-export default Arquitectos;
+export default Entrenadores;
