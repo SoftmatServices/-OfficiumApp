@@ -12,6 +12,7 @@ import MnUser from "./MnUser";
 import Albaniles from "./Components/Servicios/Albaniles";
 import Arquitectos from "./Components/Servicios/Arquitectos";
 import Menus from "./Components/Servicios/Menus";
+import Automoviles from "./Components/Servicios/Automoviles";
 import Recuperacion from "./Components/Recuperacion";
 import {
   BrowserRouter as Router,
@@ -35,6 +36,7 @@ function App(){
 			<Route exact path="/Recuperacion" component={Recuperacion}/>
 			<Route exact path="/Albaniles" component={Albaniles}/>
 			<Route exact path="/Arquitectos" component={Arquitectos}/>
+			<Route exact path="/Automoviles" component={Automoviles}/>
 			<Route exact path="/Menus" component={Menus}/>
 		</Router>
 		)
