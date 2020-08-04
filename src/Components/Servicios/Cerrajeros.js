@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 
-class Albaniles extends Component {
+class Cerrajeros extends Component {
     render() {
         return (
             <div>
@@ -67,4 +67,4 @@ class Albaniles extends Component {
         );
     }
 }
-export default Albaniles;
+export default Cerrajeros;
