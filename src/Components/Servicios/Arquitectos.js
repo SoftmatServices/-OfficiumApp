@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import '../../css/Latera.css';
 import '../../css/Menus.css';
 import ListaContainer from '../ListaHome/ListaContainer';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 class Arquitectos extends Component {
     render() {
         return (
@@ -12,7 +18,7 @@ class Arquitectos extends Component {
                             <h3>Arquitectos</h3>
                         </div>
                         <ul className="list-unstyled components">
-                            <p>Menu</p>
+                            <p><Link to="/Menus">Menu</Link></p>
                             <li className="active">
                                 <a href="#menu">Albañiles</a>
                             </li>
