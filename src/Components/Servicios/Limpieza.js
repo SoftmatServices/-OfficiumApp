@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 
-class Automoviles extends Component {
+class Limpieza extends Component {
     render() {
         return (
             <div>
@@ -67,4 +67,4 @@ class Automoviles extends Component {
         );
     }
 }
-export default Automoviles;
+export default Limpieza;
