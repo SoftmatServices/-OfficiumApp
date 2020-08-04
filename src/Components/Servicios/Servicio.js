@@ -1,5 +1,11 @@
 import React from 'react';
 import '../../css/Servicios.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 class Servicio extends React.Component {
 	render() {
 		return (
