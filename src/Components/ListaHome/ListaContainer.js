@@ -40,7 +40,7 @@ class ListaContainer extends React.Component {
 		        		<Search handleSearch ={this.handleSearch}/>
 		        	</div>
 	        	</div>
-				<div className="container bg-light">
+				<div className="container bg-white non-border">
 					<div className="row justify-content-center"> 
 				        {listas.map((list) => <Lista
 				        	//key = {list.string()}
