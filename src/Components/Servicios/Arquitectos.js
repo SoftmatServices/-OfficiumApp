@@ -6,14 +6,14 @@ class Arquitectos extends Component {
     render() {
         return (
             <div>
-                <div class="wrapper">
+                <div className="wrapper">
                     <nav id="sidebar">
-                        <div class="sidebar-header">
+                        <div className="sidebar-header">
                             <h3>Arquitectos</h3>
                         </div>
-                        <ul class="list-unstyled components">
+                        <ul className="list-unstyled components">
                             <p>Bienvenidos</p>
-                            <li class="active">
+                            <li className="active">
                                 <a href="#menu">Albañiles</a>
                             </li>
                             <li>
@@ -28,7 +28,7 @@ class Arquitectos extends Component {
                             <li>
                                 <a href="#menu">Cerrajeros</a>
                             </li>
-                            <li class="active">
+                            <li className="active">
                                 <a href="#menu">Entrenadores</a>
                             </li>
                             <li>
@@ -43,7 +43,7 @@ class Arquitectos extends Component {
                             <li>
                                 <a href="#menu">Pintores</a>
                             </li>
-                            <li class="active">
+                            <li className="active">
                                 <a href="#menu">Plomeria</a>
                             </li>
                             <li>
