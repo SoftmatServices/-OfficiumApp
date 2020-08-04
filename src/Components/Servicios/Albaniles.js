@@ -20,6 +20,8 @@ class Albaniles extends Component {
                             <h3>Albañiles</h3>
                         </div>
                         <ul class="list-unstyled components">
+                            
+                            
                             <p>Bienvenidos</p>
                             <li class="active">
                                 <Link to="/Arquitectos">Arquitectos</Link>
