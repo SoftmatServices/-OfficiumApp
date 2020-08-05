@@ -17,10 +17,10 @@ class Automoviles extends Component {
                 <div className="wrapper">
                     <nav id="sidebar">
                         <div className="sidebar-header">
-                            <p><Link to="/Menus">Menu</Link></p>
+                            <h3>Automóviles</h3>
                         </div>
                         <ul className="list-unstyled components">
-                            <p>Automóviles</p>
+                            <p><Link to="/Menus">Menu</Link></p>
                             <li className="active">
                                 <Link to="/Albaniles">Albañiles</Link>
                             </li>
