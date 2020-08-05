@@ -27,12 +27,12 @@ import Tecnicos from "./Components/Servicios/Tecnicos";
 
 
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
 } from "react-router-dom";
-import Menu from "./Components/Servicios/Menus";
+
 
 function App(){
 	return (
