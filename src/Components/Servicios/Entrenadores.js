@@ -15,7 +15,7 @@ class Entrenadores extends Component {
                 <div className="wrapper">
                     <nav id="sidebar">
                         <div className="sidebar-header">
-                            <h3>Arquitectos</h3>
+                            <h3>Entrenadores</h3>
                         </div>
                         <ul className="list-unstyled components">
                             <p><Link to="/Menus">Menu</Link></p>
