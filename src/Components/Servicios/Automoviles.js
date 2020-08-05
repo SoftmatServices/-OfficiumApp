@@ -20,7 +20,7 @@ class Automoviles extends Component {
                             <p><Link to="/Menus">Menu</Link></p>
                         </div>
                         <ul className="list-unstyled components">
-                            <p><Link to="/Menus">Menu</Link></p>
+                            <p>Automoviles</p>
                             <li className="active">
                                 <Link to="/Albañiles">Albañiles</Link>
                             </li>
