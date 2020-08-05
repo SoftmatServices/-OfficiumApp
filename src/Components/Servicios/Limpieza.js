@@ -22,7 +22,7 @@ class Limpieza extends Component {
                         <ul className="list-unstyled components">
                             <p><Link to="/Menus">Menu</Link></p>
                             <li className="active">
-                                <Link to="/Arquitectos">Limpieza</Link>
+                                <Link to="/Limpieza">Limpieza</Link>
                             </li>
                             <li>
                                 <a href="#menu">Arquitectos</a>
