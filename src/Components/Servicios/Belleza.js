@@ -20,7 +20,7 @@ class Belleza extends Component {
                             <h3>Albañiles</h3>
                         </div>
                         <ul className="list-unstyled components">
-                            <p>Bienvenidos</p>
+                            <p><Link to="/Menus">Menu</Link></p>
                             <li className="active">
                                 <Link to="/Arquitectos">Arquitectos</Link>
                             </li>
