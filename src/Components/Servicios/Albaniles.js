@@ -28,7 +28,7 @@ class Albaniles extends Component {
                                 <Link to="/Arquitectos">Arquitectos</Link>
                             </li>
                             <li>
-                                <Link to="/Automóviles">Automóviles</Link>
+                                <Link to="/Automoviles">Automóviles</Link>
                             </li>
                             <li>
                                 <Link to="/Belleza">Belleza</Link>
