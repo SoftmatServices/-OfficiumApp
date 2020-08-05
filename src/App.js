@@ -14,6 +14,14 @@ import Arquitectos from "./Components/Servicios/Arquitectos";
 import Menus from "./Components/Servicios/Menus";
 import Automoviles from "./Components/Servicios/Automoviles";
 import Recuperacion from "./Components/Recuperacion";
+import Belleza from "./Components/Servicios/Belleza";
+import Carpinteros from "./Components/Servicios/Carpinteros";
+import Cerrajeros from "./Components/Servicios/Cerrajeros";
+import Entrenadores from "./Components/Servicios/Entrenadores";
+import Electricistas from "./Components/Servicios/Electricistas";
+import Reparaciones from "./Components/Servicios/Reparaciones";
+
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -37,6 +45,12 @@ function App(){
 			<Route exact path="/Albaniles" component={Albaniles}/>
 			<Route exact path="/Arquitectos" component={Arquitectos}/>
 			<Route exact path="/Automoviles" component={Automoviles}/>
+			<Route exact path="/Belleza" component={Belleza}/>
+			<Route exact path="/Carpinteros" component={Carpinteros}/>
+			<Route exact path="/Cerrajeros" component={Cerrajeros}/>
+			<Route exact path="/Entrenadores" component={Entrenadores}/>
+			<Route exact path="/Electricistas" component={Electricistas}/>
+			<Route exact path="/Reparaciones" component={Reparaciones}/>
 			<Route exact path="/Menus" component={Menus}/>
 		</Router>
 		)
