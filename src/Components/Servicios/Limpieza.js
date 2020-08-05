@@ -22,40 +22,43 @@ class Limpieza extends Component {
                         <ul className="list-unstyled components">
                             <p><Link to="/Menus">Menu</Link></p>
                             <li className="active">
+                                <Link to="/Albaniles">Albañiles</Link>
+                            </li>
+                            <li>
+                                <Link to="/Arquitectos">Arquitectos</Link>
+                            </li>
+                            <li>
+                                <Link to="/Automoviles">Automóviles</Link>
+                            </li>
+                            <li>
+                                <Link to="/Belleza">Belleza</Link>
+                            </li>
+                            <li>
+                                <Link to="/Carpinteros">Carpinteros</Link>
+                            </li>
+                            <li>
+                                <Link to="/Cerrajeros">Cerrajeros</Link>
+                            </li>
+                            <li className="active">
+                                <Link to="/Entrenadores">Entrenadores</Link>
+                            </li>
+                            <li>
+                                <Link to="/Electricistas">Electricistas</Link>
+                            </li>
+                            <li>
+                                <Link to="/Reparaciones">Reparaciones</Link>
+                            </li>
+                            <li>
                                 <Link to="/Limpieza">Limpieza</Link>
                             </li>
                             <li>
-                                <a href="#menu">Arquitectos</a>
-                            </li>
-                            <li>
-                                <a href="#menu">Belleza</a>
-                            </li>
-                            <li>
-                                <a href="#menu">Carpinteros</a>
-                            </li>
-                            <li>
-                                <a href="#menu">Cerrajeros</a>
+                                <Link to="/Pintores">Pintores</Link>
                             </li>
                             <li className="active">
-                                <a href="#menu">Entrenadores</a>
+                                <Link to="/Plomeria">Plomeria</Link>
                             </li>
                             <li>
-                                <a href="#menu">Electricistas</a>
-                            </li>
-                            <li>
-                                <a href="#menu">Reparaciones</a>
-                            </li>
-                            <li>
-                                <a href="#menu">Limpieza</a>
-                            </li>
-                            <li>
-                                <a href="#menu">Pintores</a>
-                            </li>
-                            <li className="active">
-                                <a href="#menu">Plomeria</a>
-                            </li>
-                            <li>
-                                <a href="#menu">Tecnicos</a>
+                                <Link to="/Tecnicos">Tecnicos</Link>
                             </li>
                         </ul>
                     </nav>
