@@ -20,6 +20,10 @@ import Cerrajeros from "./Components/Servicios/Cerrajeros";
 import Entrenadores from "./Components/Servicios/Entrenadores";
 import Electricistas from "./Components/Servicios/Electricistas";
 import Reparaciones from "./Components/Servicios/Reparaciones";
+import Limpieza from "./Components/Servicios/Limpieza";
+import Pintores from "./Components/Servicios/Pintores";
+import Plomeria from "./Components/Servicios/Plomeria";
+import Tecnicos from "./Components/Servicios/Tecnicos";
 
 
 import {
@@ -51,6 +55,10 @@ function App(){
 			<Route exact path="/Entrenadores" component={Entrenadores}/>
 			<Route exact path="/Electricistas" component={Electricistas}/>
 			<Route exact path="/Reparaciones" component={Reparaciones}/>
+			<Route exact path="/Limpieza" component={Limpieza}/>
+			<Route exact path="/Pintores" component={Pintores}/>
+			<Route exact path="/Plomeria" component={Plomeria}/>
+			<Route exact path="/Tecnicos" component={Tecnicos}/>
 			<Route exact path="/Menus" component={Menus}/>
 		</Router>
 		)
