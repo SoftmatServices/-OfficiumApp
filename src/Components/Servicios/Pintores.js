@@ -10,14 +10,14 @@ import {
 } from "react-router-dom";
 
 
-class Albaniles extends Component {
+class Pintores extends Component {
     render() {
         return (
             <div>
                 <div className="wrapper">
                     <nav id="sidebar">
                         <div className="sidebar-header">
-                            <h3>Albañiles</h3>
+                            <h3>Pintores</h3>
                         </div>
                         <ul className="list-unstyled components">
                             <p><Link to="/Menus">Menu</Link></p>
@@ -67,4 +67,4 @@ class Albaniles extends Component {
         );
     }
 }
-export default Albaniles;
+export default Pintores;
