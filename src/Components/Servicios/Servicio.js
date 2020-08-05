@@ -49,7 +49,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Belleza</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Belleza">Belleza</Link></div>
 										<img src="../Img/SVG/piel.svg" alt="Belleza" width="100" height="200"></img>
 									</div>
 								</div>
@@ -60,7 +60,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Carpinteros</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Carpinteros">Carpinteros</Link></div>
 										<img src="../Img/SVG/Carpinteria.svg" alt="Carpinteros" width="100" height="200"></img>
 									</div>
 								</div>
@@ -71,7 +71,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Cerrajeros</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Cerrajeros">Cerrajeros</Link></div>
 										<img src="../Img/SVG/llave.svg" alt="Cerrajeros" width="100" height="200"></img>
 									</div>
 								</div>
@@ -82,7 +82,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Entrenadores</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Automoviles">Entrenadores</Link></div>
 										<img src="../Img/SVG/velocidad.svg" alt="Entrenadores" width="100" height="200"></img>
 									</div>
 								</div>
@@ -93,7 +93,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Electricistas</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Electricistas">Electricistas</Link></div>
 										<img src="../Img/SVG/idea.svg" alt="Electricistas" width="100" height="200"></img>
 									</div>
 								</div>
@@ -104,7 +104,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Reparaciones</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Reparaciones">Reparaciones</Link></div>
 										<img src="../Img/SVG/mantenimiento.svg" alt="Reparaciones" width="100" height="200"></img>
 									</div>
 								</div>
@@ -115,7 +115,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Limpieza</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Limpieza">Limpieza</Link></div>
 										<img src="../Img/SVG/Limpieza.svg" alt="Limpieza" width="100" height="200"></img>
 									</div>
 								</div>
@@ -126,7 +126,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Pintores</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Pintores">Pintores</Link></div>
 										<img src="../Img/SVG/Pintores.svg" alt="Pintores" width="100" height="200"></img>
 									</div>
 								</div>
@@ -137,7 +137,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Plomeria</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Automoviles">Plomeria</Link></div>
 										<img src="../Img/SVG/Plomeria.svg" alt="Plomeria" width="100" height="200"></img>
 									</div>
 								</div>
@@ -148,7 +148,7 @@ class Servicio extends React.Component {
 							<div className="w3-row- padding">
 								<div className="w3-col l3 m6 w3-margin-bottom">
 									<div className="w3-display-container">
-										<div className="w3-display-topleft w3-black w3-padding">Tecnicos</div>
+										<div className="w3-display-topleft w3-black w3-padding"><Link to="/Automoviles">Tecnicos</Link></div>
 										<img src="../Img/SVG/Tecnicos.svg" alt="Tecnicos" width="100" height="200"></img>
 									</div>
 								</div>
