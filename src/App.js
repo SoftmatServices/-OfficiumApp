@@ -24,8 +24,6 @@ import Limpieza from "./Components/Servicios/Limpieza";
 import Pintores from "./Components/Servicios/Pintores";
 import Plomeria from "./Components/Servicios/Plomeria";
 import Tecnicos from "./Components/Servicios/Tecnicos";
-
-
 import {
 	BrowserRouter as Router,
 	Switch,
