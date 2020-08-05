@@ -25,37 +25,40 @@ class Automoviles extends Component {
                                 <Link to="/Albaniles">Albañiles</Link>
                             </li>
                             <li>
-                                <a href="#menu">Arquitectos</a>
+                                <Link to="/Arquitectos">Arquitectos</Link>
                             </li>
                             <li>
-                                <a href="#menu">Belleza</a>
+                                <Link to="/Automoviles">Automóviles</Link>
                             </li>
                             <li>
-                                <a href="#menu">Carpinteros</a>
+                                <Link to="/Belleza">Belleza</Link>
                             </li>
                             <li>
-                                <a href="#menu">Cerrajeros</a>
+                                <Link to="/Carpinteros">Carpinteros</Link>
+                            </li>
+                            <li>
+                                <Link to="/Cerrajeros">Cerrajeros</Link>
                             </li>
                             <li className="active">
-                                <a href="#menu">Entrenadores</a>
+                                <Link to="/Entrenadores">Entrenadores</Link>
                             </li>
                             <li>
-                                <a href="#menu">Electricistas</a>
+                                <Link to="/Electricistas">Electricistas</Link>
                             </li>
                             <li>
-                                <a href="#menu">Reparaciones</a>
+                                <Link to="/Reparaciones">Reparaciones</Link>
                             </li>
                             <li>
-                                <a href="#menu">Limpieza</a>
+                                <Link to="/Limpieza">Limpieza</Link>
                             </li>
                             <li>
-                                <a href="#menu">Pintores</a>
+                                <Link to="/Pintores">Pintores</Link>
                             </li>
                             <li className="active">
-                                <a href="#menu">Plomeria</a>
+                                <Link to="/Plomeria">Plomeria</Link>
                             </li>
                             <li>
-                                <a href="#menu">Tecnicos</a>
+                                <Link to="/Tecnicos">Tecnicos</Link>
                             </li>
                         </ul>
                     </nav>
