@@ -22,16 +22,19 @@ class Albaniles extends Component {
                         <ul className="list-unstyled components">
                             <p><Link to="/Menus">Menu</Link></p>
                             <li className="active">
+                                <Link to="/Albaniles">Albañiles</Link>
+                            </li>
+                            <li>
                                 <Link to="/Arquitectos">Arquitectos</Link>
                             </li>
                             <li>
-                                <a href="#menu">Automóviles</a>
+                                <Link to="/Automóviles">Automóviles</Link>
                             </li>
                             <li>
-                                <a href="#menu">Belleza</a>
+                                <Link to="/Belleza">Belleza</Link>
                             </li>
                             <li>
-                                <a href="#menu">Carpinteros</a>
+                                <Link to="/Carpinteros">Carpinteros</Link>
                             </li>
                             <li>
                                 <a href="#menu">Cerrajeros</a>
