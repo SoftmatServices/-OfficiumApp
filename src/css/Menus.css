@@ -1,6 +1,6 @@
 .row{
     padding: 2rem;
-    right: -200px;
+    right: -150px;
 }
 @media (min-width: 992px){
     .row{
