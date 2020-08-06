@@ -26,15 +26,12 @@ class Search extends React.Component{
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="row">
-                                        <div className="col-lg-3 col-md-3 col-sm-12 p-0">
+                                        <div className="col-lg-50 col-md-50 col-sm-8">
                                             <input className="form-control search-slt" placeholder="Busqueda"
                                             value={search}
                                             type="text" 
                                             onChange={this.handleChange}
                                             />
-                                        </div>
-                                        <div className="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <input type="text" className="form-control search-slt" placeholder="Servicio"/>
                                         </div>
                                         <div className="col-md-2 col-sm-6">
                                             <button type="button" 
