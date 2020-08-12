@@ -50,8 +50,8 @@ class ListaContainer extends React.Component {
 							serviceCategoryCdId = {list.service_category_ad_id}
 							serviceUserId = {list.service_user_id}
 						/>)
-				   		}
-				   	</div>	
+	                	}
+		            </div>	
 			    </div>
 		    </div>
 		)
