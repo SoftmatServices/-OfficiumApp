@@ -35,7 +35,7 @@ import {
 function App(){
 	return (
 		<Router>
-			<Route exact path="/" component={Menus}/>
+			<Route exact path="/" component={Login}/>
 			<Route exact path="/MnGen" component={MnGen}/>
 			<Route exact path="/MnUser" component={MnUser}/>
 			<Route exact path="/Login" component={Login}/>
