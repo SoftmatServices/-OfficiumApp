@@ -40,7 +40,7 @@ render(){
 							<input type="checkbox"/>Recordarme
 						</div>
 						<div className="form-group">
-							<input type="submit" value="Ingresar" className="btn float-right login_btn"/>
+							<Link to="/Menus"><input type="submit" value="Ingresar" className="btn float-right login_btn"/></Link>
 						</div>
 					</form>
 				</div>
