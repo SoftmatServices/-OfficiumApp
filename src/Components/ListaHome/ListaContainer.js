@@ -1,8 +1,7 @@
 import React from 'react';
 import Lista from './Lista';
-//import '../../css/List.css';
-//import '../../css/Item.css';
-import '../../css/estilos.css';
+import '../../css/List.css';
+import '../../css/Item.css';
 import Search from './Search';
 import {getListasByPopular, getListasBySearch} from '../../Services/Get'
 
