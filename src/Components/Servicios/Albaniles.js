@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../../css/Latera.css';
 import '../../css/Menus.css';
-import '../../css/estilos.css';
 import ListaContainer from '../ListaHome/ListaContainer';
 import {
     BrowserRouter as Router,
