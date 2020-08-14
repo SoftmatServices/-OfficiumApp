@@ -3,12 +3,21 @@ import '../../css/List.css';
 import PropTypes from 'prop-types'
 
 const Lista = ({name, category, description, serviceCategoryCdId, serviceUserId}) => (
-        <div className="col-6 col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2 bg-white">
-            <div className="title">
-                <font face="Comic Sans MS,arial,verdana" size="4"><p>{name}</p></font>
-                <font face="Comic Sans MS,arial,verdana" size="3"><p>{category}</p></font>
-                <font face="Comic Sans MS,arial,verdana" size="2"><p>{description}</p></font>
-            </div>             
+        <div className="clientes contenedor">
+            <section>
+                <h2 className="titulo">Datos de nuestros clientes</h2>
+                    <div className="cards">
+                        <div className="card">
+                            <img src="../Img/SVG/labor.svg" alt=""></img>
+                        <div className="contenido-texto-card">
+                            <p>{name}</p>
+                            <p>{category}</p>
+                            <p>{description}</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 
