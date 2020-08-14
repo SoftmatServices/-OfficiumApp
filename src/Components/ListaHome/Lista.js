@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const Lista = ({name, category, description, serviceCategoryCdId, serviceUserId}) => (
         <div className="clientes contenedor">
             <section>
-                <h2 className="titulo">Datos de nuestros clientes</h2>
+                <h2 className="titulo">Clientes</h2>
                     <div className="cards">
                         <div className="card">
                             <img src="../Img/SVG/labor.svg" alt=""></img>
