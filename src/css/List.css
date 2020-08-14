@@ -16,7 +16,7 @@
 }
 
 .cards .card{
-    background: #4d0686;
+    background:#ececec;
     display: flex;
     width: 80%;
     align-items: baseline;
@@ -29,19 +29,19 @@
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border: 3px solid #fff;
+    border: 3px solid #0b828a;
     border-radius: 50%;
     display: block;
 }
 
 .cards .card > .contenido-texto-card{
     width: 50%;
-    color: #fff;
+    color: #ececec;
 }
 
 .cards .card > .contenido-texto-card p{
     font-weight: 300;
-    padding-top: 5px;
+    padding-top: -5px;
     text-align: center;
 }
 .titulo{
@@ -65,7 +65,7 @@
     margin-bottom: 30px;
 }
 .cards .card{
-    height: 350px;
+    height: 430px;
     display: flex;
     flex-direction: column;
     align-items: center;
