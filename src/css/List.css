@@ -39,9 +39,9 @@
     color: #ececec;
 }
 
-.cards .card > .contenido-texto-card p{
+.cards .card > .contenido-texto-card .p1{
     font-weight: 300;
-    padding-top: -5px;
+    padding-top: 5px;
     text-align: center;
 }
 .titulo{
