@@ -1,4 +1,7 @@
-
+*{
+    margin:0;
+    padding: 0;
+}
 .titulo {
     color: #642a73;
     font-size: 30px;
