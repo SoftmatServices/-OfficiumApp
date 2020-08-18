@@ -1,28 +1,7 @@
 import React, {Component} from 'react';
 import { getDeptosAll, getMpios } from '../Services/Get';
 class Cuenta extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      deptos: [],
-      mpios: [],
-      name: '',
-      email: '',
-      surname: '',
-      Mpios: '',
-      nameError: '',
-      emailError: '',
-      surnameError: '',
-      cityError: '',
-      direction: '',
-      main: '',
-      secondary: '',
-      profession: '',
-      department: ''
-    };
-  }
-
-
+  
   fillToSubscribeDeptos = (event) => {
     this.setState({
       department: event.target.value
