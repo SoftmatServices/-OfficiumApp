@@ -4,6 +4,7 @@ import '../../css/List.css';
 import '../../css/Item.css';
 import Search from './Search';
 import {getListasByPopular, getListasBySearch} from '../../Services/Get'
+import Filtro from './Filtro';
 
 class ListaContainer extends React.Component {
 	constructor (props) {
@@ -38,6 +39,9 @@ class ListaContainer extends React.Component {
 				<div className="container-fluid mt-4">
 		        	<div className="subcontainer">	
 		        		<Search handleSearch ={this.handleSearch}/>
+		        	</div>
+					<div id="sidebar">	
+						<Filtro handleSearch ={this.handleSearch}/>
 		        	</div>
 	        	</div>
 				<div className="container bg-white">
