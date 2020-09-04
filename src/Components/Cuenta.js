@@ -79,7 +79,7 @@ class Cuenta extends Component {
                 <div className="input-group-prepend">
                   <span className="input-group-text"><i className="fas fa-at"></i></span>
                 </div>
-                <input type="password" className="form-control" placeholder="Correo"/>
+                <input type="email" className="form-control" placeholder="Correo"/>
               </div>
 
               <div className="input-group form-group">
