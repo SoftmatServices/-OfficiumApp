@@ -107,12 +107,12 @@ class Cuenta extends Component {
 
     render() {
         return (
-          <div className="d-flex justify-content-center h-100">
+            <div className="d-flex justify-content-center h-100">
             <div className="card">
-              <div className="card-header">
+            <div className="card-header">
                 <h3>Regitra tus Datos</h3>
-              </div>
-          <div className="card-body">
+            </div>
+            <div className="card-body">
             <form>
             <label>Nombre: <input type='text'
                 name='name'
@@ -141,10 +141,9 @@ class Cuenta extends Component {
             <button type="submit" onClick={this.onCreateAd}>Crear</button>
                         <p>{this.state.message}</p>
             </form>
-          </div>
         </div>
-      </div>
-
+        </div>
+    </div>
         )
     }
 }
