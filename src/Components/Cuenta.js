@@ -1,102 +1,152 @@
 import React, {Component} from 'react';
-import { getDeptosAll, getMpios } from '../Services/Get';
+import axios from 'axios';
+
+
 class Cuenta extends Component {
-  
-  fillToSubscribeDeptos = (event) => {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+          name: " ",
+          email: " ",
+          birthdate: " ",
+          mobilePhone: " ",
+          state: " ",
+          city: " ",
+          password: " ",
+          isFetch: true
+        }
+    }
+
+    fillToSubscribeName = (event) => {
+        this.setState({
+            name: event.target.value
+        });
+    }
+    fillToSubscribeEmail = (event) => {
+        this.setState({
+            email: event.target.value
+        });
+    }
+    fillToSubscribeBirthdate = (event) => {
+        this.setState({
+            birthdate: event.target.value
+        });
+    }
+    fillToSubscribeMobilePhone = (event) => {
+        this.setState({
+            mobilePhone: event.target.value
+        });
+    }
+    fillToSubscribeState = (event) => {
+      this.setState({
+          state: event.target.value
+      });
+  }
+
+  fillToSubscribeCity= (event) => {
     this.setState({
-      department: event.target.value
+      city: event.target.value
     });
-    this.onListMpios(this.department);
-
-    console.log(this.department)
   }
 
-  fillToSubscribeMpios = (event) => {
+  fillToSubscribePassword= (event) => {
     this.setState({
-      Mpios: event.target.value
-    });
-
-  }
-
-  async componentDidMount() {
-    this.onListDeptos();
-  }
-
-  onListDeptos = async () => {
-    const resDeptos = await getDeptosAll()
-    this.setState({ deptos: resDeptos.data.deptos });
-  }
-
-  onListMpios = async (q) => {
-    const resMpios = await getMpios(q)
-    this.setState({ mpios: resMpios.data.mpios });
-  }
-
-  onCreateUser = async () => {
-    let ad = {
-      name: this.name.value,
-      description: this.refs.description.value,
-      serviceCatAdId: this.refs.serviceCatAdId.value,
-      serviceUserId: this.refs.serviceUserId.value
-
-    };
-    fetch('http://efactura.softmatservices.com/v1/createAd', {
-      method: 'POST',
-      headers: { 'Content-type': 'application/json' },
-      body: ad
-    }).then(r => r.json()).then(res => {
-      if (res) {
-        this.setState({ message: 'New Employee is Created Successfully' });
-      }
+      password: event.target.value
     });
   }
+    //probar axios en metodos POST error CORS
+    onSubmit = async e => {
+        e.preventDefault();
+        await axios.post('http://oficium.softmatservices.com/v1/createServiceUser', {
+            name: this.state.name,
+            email: this.state.email,
+            birthdate: this.state.birthdate,
+            mobilePhone: this.state.mobilePhone,
+            state: this.state.state,
+            city: this.state.city,
+            password: this.state.password
+        })
 
-  render(){
-    return(
-      <div className="d-flex justify-content-center h-100">
-          <div className="card">
-            <div className="card-header">
-              <h3>Regitra tus Datos</h3>
-            </div>
+
+    }
+    onCreateAd = async () => {
+
+        function createGist(opts) {
+            console.log('Posting request to GitHub API...');
+            fetch('http://oficium.softmatservices.com/v1/createServiceUser', {
+                method: 'POST',
+                body: opts
+            })
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    console.log('Created Gist:');
+                });
+        }
+
+        var formData = new FormData();
+
+        var vari = {
+            'name': this.state.name,
+            'email': this.state.email,
+            'birthdate': this.state.birthdate,
+            'mobilePhone': this.state.mobilePhone,
+            'state': this.state.state,
+            'city': this.state.city,
+            'password': this.state.password
+        }
+        for (var k in vari) {
+            formData.append(k, vari[k]);
+        }
+
+        createGist(formData);
+
+    }
+
+    render() {
+        return (
+          <div className="d-flex justify-content-center h-100">
+            <div className="card">
+              <div className="card-header">
+                <h3>Regitra tus Datos</h3>
+              </div>
           <div className="card-body">
             <form>
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-user"></i></span>
-                </div>
-                <input type="text" className="form-control" placeholder="Nombres"/>
-              </div>	
+            <label>Nombre: <input type='text'
+                name='name'
+                id='name'
+                placeholder="Nombre"
+                onChange={this.fillToSubscribeName}
+                required></input>
+            </label>
 
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="far fa-user"></i></span>
-                </div>
-                <input type="text" className="form-control" placeholder="Apellidos"/>
-              </div>
-              
+            <label>Correo : <input type='text'
+                                name='email'
+                                id='email'
+                                placeholder="Correo"
+                                onChange={this.fillToSubscribeEmail}
+                                required></input>
+            </label>
 
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-at"></i></span>
-                </div>
-                <input type="email" className="form-control" placeholder="Correo"/>
-              </div>
-
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-key"></i></span>
-                </div>
-                <input type="password" className="form-control" placeholder="Contraseña"/>
-              </div>
+            <label>Contraseña : <input type='text'
+                                name='password'
+                                id='password'
+                                placeholder="Contraseña"
+                                onChange={this.fillToSubscribePassword}
+                                required></input>
+            </label>
             
-              <div className="form-group">
-                <input type="submit" value="Registrarme" className="btn float-right login_btn"/>
-              </div>
+            <button type="submit" onClick={this.onCreateAd}>Crear</button>
+                        <p>{this.state.message}</p>
             </form>
           </div>
         </div>
       </div>
-    );
-  }
+
+        )
+    }
 }
+
 export default Cuenta;
