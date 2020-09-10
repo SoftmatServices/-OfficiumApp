@@ -7,14 +7,14 @@ class Cuenta extends Component {
         super(props)
 
         this.state = {
-          name: " ",
-          email: " ",
-          birthdate: " ",
-          mobilePhone: " ",
-          state: " ",
-          city: " ",
-          password: " ",
-          isFetch: true
+            name: " ",
+            email: " ",
+            birthdate: " ",
+            mobilePhone: " ",
+            state: " ",
+            city: " ",
+            password: " ",
+            isFetch: true
         }
     }
 
@@ -39,22 +39,22 @@ class Cuenta extends Component {
         });
     }
     fillToSubscribeState = (event) => {
-      this.setState({
-          state: event.target.value
-      });
-  }
+        this.setState({
+            state: event.target.value
+        });
+    }
 
-  fillToSubscribeCity= (event) => {
-    this.setState({
-      city: event.target.value
-    });
-  }
+    fillToSubscribeCity= (event) => {
+        this.setState({
+            city: event.target.value
+        });
+    }
 
-  fillToSubscribePassword= (event) => {
-    this.setState({
-      password: event.target.value
-    });
-  }
+    fillToSubscribePassword= (event) => {
+        this.setState({
+            password: event.target.value
+        });
+    }
     //probar axios en metodos POST error CORS
     onSubmit = async e => {
         e.preventDefault();
@@ -108,42 +108,45 @@ class Cuenta extends Component {
     render() {
         return (
             <div className="d-flex justify-content-center h-100">
-            <div className="card">
-            <div className="card-header">
-                <h3>Regitra tus Datos</h3>
+                <div className="card">
+                    <div className="card-header">
+                        <h3>Regitra tus Datos</h3>
+                    </div>
+                    <div className="card-body">
+                        <form>
+                            <label>Nombre: <input type='text'
+                                name='name'
+                                id='name'
+                                placeholder="Nombre"
+                                onChange={this.fillToSubscribeName}
+                                required></input>
+                            </label>
+
+                            <label>Correo : 
+                                <input type='text'
+                                    name='email'
+                                    id='email'
+                                    placeholder="Correo"
+                                    onChange={this.fillToSubscribeEmail}
+                                    required>
+                                </input>
+                            </label>
+
+                            <label>Contraseña : 
+                                <input type='text'
+                                    name='password'
+                                    id='password'
+                                    placeholder="Contraseña"
+                                    onChange={this.fillToSubscribePassword}
+                                    required>
+                                </input>
+                            </label>
+                            <button type="submit" onClick={this.onCreateAd}>Crear</button>
+                            <p>{this.state.message}</p>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div className="card-body">
-            <form>
-            <label>Nombre: <input type='text'
-                name='name'
-                id='name'
-                placeholder="Nombre"
-                onChange={this.fillToSubscribeName}
-                required></input>
-            </label>
-
-            <label>Correo : <input type='text'
-                                name='email'
-                                id='email'
-                                placeholder="Correo"
-                                onChange={this.fillToSubscribeEmail}
-                                required></input>
-            </label>
-
-            <label>Contraseña : <input type='text'
-                                name='password'
-                                id='password'
-                                placeholder="Contraseña"
-                                onChange={this.fillToSubscribePassword}
-                                required></input>
-            </label>
-            
-            <button type="submit" onClick={this.onCreateAd}>Crear</button>
-                        <p>{this.state.message}</p>
-            </form>
-        </div>
-        </div>
-    </div>
         )
     }
 }
