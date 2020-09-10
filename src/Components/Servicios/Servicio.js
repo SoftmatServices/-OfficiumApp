@@ -10,11 +10,6 @@ class Servicio extends React.Component {
 	render() {
 		return (
 			<div>
-    			<body className="animsition">
-					<div className="page-wrapper">
-						
-					</div>
-				</body>
 				<section>
 					<div className="w3-content w3-padding">
 						<div className="w3-row- padding">
