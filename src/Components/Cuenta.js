@@ -8,13 +8,13 @@ class Cuenta extends Component {
 
         this.state = {
             name: " ",
-            email: " ",
-            birthdate: " ",
+            email: " "
+            /*birthdate: " ",
             mobilePhone: " ",
             state: " ",
             city: " ",
             password: " ",
-            isFetch: true
+            isFetch: true*/
         }
     }
 
@@ -28,7 +28,7 @@ class Cuenta extends Component {
             email: event.target.value
         });
     }
-    fillToSubscribeBirthdate = (event) => {
+    /*fillToSubscribeBirthdate = (event) => {
         this.setState({
             birthdate: event.target.value
         });
@@ -54,27 +54,13 @@ class Cuenta extends Component {
         this.setState({
             password: event.target.value
         });
-    }
+    }*/
     //probar axios en metodos POST error CORS
-    onSubmit = async e => {
-        e.preventDefault();
-        await axios.post('http://oficium.softmatservices.com/v1/createServiceUser', {
-            name: this.state.name,
-            email: this.state.email,
-            birthdate: this.state.birthdate,
-            mobilePhone: this.state.mobilePhone,
-            state: this.state.state,
-            city: this.state.city,
-            password: this.state.password
-        })
-
-
-    }
     onCreateAd = async () => {
 
         function createGist(opts) {
             console.log('Posting request to GitHub API...');
-            fetch('http://oficium.softmatservices.com/v1/createServiceUser', {
+            fetch('http://oficium.softmatservices.com/v1/createServiceUserBasic', {
                 method: 'POST',
                 body: opts
             })
@@ -90,12 +76,12 @@ class Cuenta extends Component {
 
         var vari = {
             'name': this.state.name,
-            'email': this.state.email,
-            'birthdate': this.state.birthdate,
+            'email': this.state.email
+            /*'birthdate': this.state.birthdate,
             'mobilePhone': this.state.mobilePhone,
             'state': this.state.state,
             'city': this.state.city,
-            'password': this.state.password
+            'password': this.state.password*/
         }
         for (var k in vari) {
             formData.append(k, vari[k]);
@@ -104,7 +90,40 @@ class Cuenta extends Component {
         createGist(formData);
 
     }
+    test = async () => {
+        alert ("entop") 
+        function createGist(opts) {
+            console.log('Posting request to GitHub API...');
+            fetch('http://oficium.softmatservices.com/v1/createServiceUserBasic', {
+                method: 'POST',
+                body: opts
+            })
+                .then(function (response) {
+                    return response.json();
+                })
+                /*.then(function (data) {
+                    console.log('Created Gist:');
+                });*/
+                alert("f");
+        }
 
+        var formData = new FormData();
+
+        var vari = {
+            'name': this.state.name,
+            'email': this.state.email
+            /*'birthdate': this.state.birthdate,
+            'mobilePhone': this.state.mobilePhone,
+            'state': this.state.state,
+            'city': this.state.city,
+            'password': this.state.password*/
+        }
+        for (var k in vari) {
+            formData.append(k, vari[k]);
+        }
+
+        createGist(formData);
+    }
     render() {
         return (
             <div className="d-flex justify-content-center h-100">
@@ -131,17 +150,9 @@ class Cuenta extends Component {
                                     required>
                                 </input>
                             </label>
-
-                            <label>Contraseña : 
-                                <input type='text'
-                                    name='password'
-                                    id='password'
-                                    placeholder="Contraseña"
-                                    onChange={this.fillToSubscribePassword}
-                                    required>
-                                </input>
-                            </label>
-                            <button type="submit" onClick={this.onCreateAd}>Crear</button>
+                        
+                            
+                            <button type="submit" onClick={this.test}>Crear</button>
                             <p>{this.state.message}</p>
                         </form>
                     </div>
