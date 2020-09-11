@@ -54,17 +54,7 @@ class RegistroContainer extends React.Component {
         });
     }
     //probar axios en metodos POST error CORS
-    onSubmit = async e => {
-        e.preventDefault();
-        await axios.post('http://oficium.softmatservices.com/v1/createAd', {
-            name: this.state.name,
-            description: this.state.description,
-            serviceCatAdId: this.state.serviceCatAdId,
-            serviceUserId: this.state.serviceUserId
-        })
-
-
-    }
+   
     onCreateAd = async () => {
 
         function createGist(opts) {
