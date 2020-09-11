@@ -119,6 +119,7 @@ class Menus extends React.Component {
                                 <div class="col-md-12">
                                     <div class="overview-wrap">
                                         <h2 class="title-1">Servicios</h2>
+										
                                         <button class="au-btn au-btn-icon au-btn--blue">
                                             <i class="zmdi zmdi-plus"></i>Creación Servicios
                                         </button>
@@ -129,11 +130,11 @@ class Menus extends React.Component {
                     </div>
                 </div>
             </div>
+			<div>
+				<Servicio />
+			</div>
         </div>
     </body>
-				<div>
-					<Servicio />
-				</div>
 			</div>
 		);
 	}
