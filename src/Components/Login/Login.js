@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../css/Estilos.css';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
 } from "react-router-dom";
 
 class Login extends React.Component {
@@ -11,48 +12,59 @@ class Login extends React.Component {
 
 render(){
     return(
-		<div className="d-flex justify-content-center h-100">
-			<div className="card">
-				<div className="card-header">
-					<h3>Iniciar sesión</h3>
-					<div className="d-flex justify-content-end social_icon">
-						<span><i className="fab fa-facebook-square"></i></span>
-						<span><i className="fab fa-instagram-square"></i></span>
-						<span><i className="fab fa-twitter-square"></i></span>
-					</div>
-				</div>
-				<div className="card-body">
-					<form>
-						<div className="input-group form-group">
-							<div className="input-group-prepend">
-								<span className="input-group-text"><i className="fas fa-user"></i></span>
+		<div>
+			<body className="animsition">
+				<div className="page-wrapper">
+					<div className="page-content--bge5">
+						<div className="container">
+							<div className="login-wrap">
+								<div className="login-content">
+									<div className="login-logo">
+										<a href="index.html">
+											<img src="/Img/Logo.ico" alt="Oficium"></img>
+										</a>
+									</div>
+									<div className="login-form">
+										<form action="" method="post">
+											<div className="form-group">
+												<label>Email Address</label>
+												<input className="au-input au-input--full" type="email" name="email" placeholder="Email"></input>
+											</div>
+
+											<div className="form-group">
+												<label>Password</label>
+												<input className="au-input au-input--full" type="password" name="password" placeholder="Password"></input>
+											</div>
+
+											<div className="login-checkbox">
+												<label>
+													<input type="checkbox" name="remember"/>Remember Me
+												</label>
+												<label>
+													<a href="index.html">Forgotten Password?</a>
+												</label>
+											</div>
+											<button className="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
+											<div className="social-login-content">
+												<div className="social-button">
+													<button className="au-btn au-btn--block au-btn--blue m-b-20">sign in with facebook</button>
+													<button className="au-btn au-btn--block au-btn--blue2">sign in with twitter</button>
+												</div>
+											</div>
+										</form>
+										<div className="register-link">
+											<p>
+												Don't you have account?
+												<a href="index.html">Sign Up Here</a>
+											</p>
+										</div>
+									</div>
+								</div>
 							</div>
-							<input type="text" className="form-control" placeholder="Nombre de usuario"/>
-						</div>	
-						
-						<div className="input-group form-group">
-							<div className="input-group-prepend">
-								<span className="input-group-text"><i className="fas fa-key"></i></span>
-							</div>
-							<input type="password" className="form-control" placeholder="Contraseña"/>
 						</div>
-						<div className="row align-items-center remember">
-							<input type="checkbox"/>Recordarme
-						</div>
-						<div className="form-group">
-							<Link to="/Menus"><input type="submit" value="Ingresar" className="btn float-right login_btn"/></Link>
-						</div>
-					</form>
-				</div>
-				<div className="card-footer">
-					<div className="d-flex justify-content-center links">
-						No tienes una cuenta?<Link to="/Cuenta">Registrate</Link>					
-					</div>
-					<div className="d-flex justify-content-center links">
-						Olvidaste tu contraseña? <Link to="/Reparaciones">Recuperar</Link>
 					</div>
 				</div>
-			</div>
+			</body>
 		</div>
     )
 	}
