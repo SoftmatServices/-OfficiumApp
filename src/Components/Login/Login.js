@@ -1,5 +1,4 @@
 import React from 'react';
-import Cuenta from "../Cuenta";
 import {
   BrowserRouter as Router,
   Switch,
@@ -50,7 +49,7 @@ render(){
 						No tienes una cuenta?<Link to="/Cuenta">Registrate</Link>					
 					</div>
 					<div className="d-flex justify-content-center links">
-						Olvidaste tu contraseña? <Link to="/Recuperacion">Recuperar</Link>
+						Olvidaste tu contraseña? <Link to="/Reparaciones">Recuperar</Link>
 					</div>
 				</div>
 			</div>

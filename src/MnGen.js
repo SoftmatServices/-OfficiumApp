@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./Home";
-import Cuenta from "./Components/Cuenta";
+import Cuenta from "./Components/Login/Cuenta";
 import Login from "./Components/Login/Login";
 import {
 	BrowserRouter as Router,

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getDeptosAll, getMpios } from '../Services/Get'
+import { getDeptosAll, getMpios } from '../../Services/Get';
 import { Redirect } from 'react-router-dom';
 
 
