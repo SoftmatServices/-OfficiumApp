@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../../css/Estilos.css';
 import axios from 'axios';
 
 
@@ -126,37 +127,57 @@ class Cuenta extends Component {
     }
     render() {
         return (
-            <div className="d-flex justify-content-center h-100">
-                <div className="card">
-                    <div className="card-header">
-                        <h3>Regitra tus Datos</h3>
+            <div>
+                <body className="animsition">
+                    <div className="page-wrapper">
+                        <div className="page-content--bge5">
+                            <div className="container">
+                                <div className="login-wrap">
+                                    <div className="login-content">
+                                        <div className="login-logo">
+                                            <a href="index.html">
+                                                <img src="/Img/Logo.ico" alt="Oficium"></img>
+                                            </a>
+                                        </div>
+                                        <div className="login-form">
+                                            <form action="" method="post">
+                                                <div className="form-group">
+                                                    <label>Username</label>
+                                                    <input className="au-input au-input--full" type="text" name="name" placeholder="Nombre" id="name"
+                                                    onChange={this.fillToSubscribeName}
+                                                    required></input>
+                                                </div>
+                                                <div className="form-group">
+                                                    <label>Email Address</label>
+                                                    <input className="au-input au-input--full" type="email" name="email" placeholder="Correo" id="email"
+                                                    onChange={this.fillToSubscribeEmail}
+                                                    required></input>
+                                                </div>
+                                                <div className="form-group">
+                                                    <label>Password</label>
+                                                    <input className="au-input au-input--full" type="password" name="password" placeholder="Contraseña" id="password"
+                                                    ></input>
+                                                </div>
+                                                <div className="login-checkbox">
+                                                    <label>
+                                                        <input type="checkbox" name="aggree"/>Agree the terms and policy
+                                                    </label>
+                                                </div>
+                                                <button className="au-btn au-btn--block au-btn--green m-b-20" type="submit" onClick={this.test}>register</button>
+                                                <div className="social-login-content">
+                                                    <div className="social-button">
+                                                        <button className="au-btn au-btn--block au-btn--blue m-b-20">register with facebook</button>
+                                                        <button className="au-btn au-btn--block au-btn--blue2">register with twitter</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="card-body">
-                        <form>
-                            <label>Nombre: <input type='text'
-                                name='name'
-                                id='name'
-                                placeholder="Nombre"
-                                onChange={this.fillToSubscribeName}
-                                required></input>
-                            </label>
-
-                            <label>Correo : 
-                                <input type='text'
-                                    name='email'
-                                    id='email'
-                                    placeholder="Correo"
-                                    onChange={this.fillToSubscribeEmail}
-                                    required>
-                                </input>
-                            </label>
-                        
-                            
-                            <button type="submit" onClick={this.test}>Crear</button>
-                            <p>{this.state.message}</p>
-                        </form>
-                    </div>
-                </div>
+                </body>
             </div>
         )
     }
