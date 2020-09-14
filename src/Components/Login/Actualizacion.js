@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { getDeptosAll, getMpios } from '../../Services/Get';
+import '../../css/Estilos.css';
 import { Redirect } from 'react-router-dom';
 
 
