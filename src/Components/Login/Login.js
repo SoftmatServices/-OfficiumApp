@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/Estilos.css';
+import '../../css/Principal/Estilos.css';
 import {
 	BrowserRouter as Router,
 	Switch,
