@@ -6,7 +6,6 @@ import Actualizacion from "./Components/Login/Actualizacion";
 import RegistroContainer from "./Components/CreateAd/RegistroContainer";
 import testAxios from "./Components/CreateAd/testAxios";
 import Login from "./Components/Login/Login";
-import './css/Styles.css';
 import MnGen from "./MnGen";
 import MnUser from "./MnUser";
 import Albaniles from "./Components/Servicios/Albaniles";
@@ -35,7 +34,7 @@ import {
 function App(){
 	return (
 		<Router>
-			<Route exact path="/" component={Login}/>
+			<Route exact path="/" component={Menus}/>
 			<Route exact path="/MnGen" component={MnGen}/>
 			<Route exact path="/MnUser" component={MnUser}/>
 			<Route exact path="/Login" component={Login}/>
