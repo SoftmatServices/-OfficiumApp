@@ -1,32 +1,39 @@
 import React from 'react';
-class Olvido extends React.Component {
+import '../../css/Estilos.css';
+class Recuperacion extends React.Component {
 
 render(){
     return(
-		<div className="d-flex justify-content-center h-100">
-          <div className="card-email">
-            <div className="">
-              <h3>Ingresa tu Correo</h3>
-            </div>
-          <div className="card-body">
-            <form>
-            
-              <div className="input-group form-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text"><i className="fas fa-at"></i></span>
+		<div>
+      <body className="animsition">
+        <div className="page-wrapper">
+          <div className="page-content--bge5">
+            <div className="container">
+              <div className="login-wrap">
+                <div className="login-content">
+                  <div className="login-logo">
+                    <a href="index.html">
+                      <img src="/Img/Logo.ico" alt="Oficium"></img>
+                    </a>
+                  </div>
+                  <div className="login-form">
+                    <form action="" method="post">
+                      <div className="form-group">
+                        <label>Email Address</label>
+                        <input class="au-input au-input--full" type="email" name="email" placeholder="Email"></input>
+                      </div>
+                      <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">submit</button>
+                    </form>
+                  </div>
                 </div>
-                <input type="password" className="form-control" placeholder="Correo"/>
               </div>
-
-              <div className="form-group">
-                <input type="submit" value="Enviar" className="btn float-right login_btn"/>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
-      </div>
+      </body>
+    </div>
     )
   }
 }
 
-export default Olvido;
+export default Recuperacion;
