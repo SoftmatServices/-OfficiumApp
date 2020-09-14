@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/Estilos.css';
+import '../../css/Principal/Estilos.css';
 class Recuperacion extends React.Component {
 
 render(){
@@ -20,9 +20,9 @@ render(){
                     <form action="" method="post">
                       <div className="form-group">
                         <label>Email Address</label>
-                        <input class="au-input au-input--full" type="email" name="email" placeholder="Email"></input>
+                        <input className="au-input au-input--full" type="email" name="email" placeholder="Email"></input>
                       </div>
-                      <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">submit</button>
+                      <button className="au-btn au-btn--block au-btn--green m-b-20" type="submit">submit</button>
                     </form>
                   </div>
                 </div>
