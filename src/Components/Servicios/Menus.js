@@ -12,7 +12,7 @@ class Menus extends React.Component {
                                 <div className="container-fluid">
                                     <div className="header-mobile-inner">
                                         <a className="logo" href="index.html">
-                                            <img src="/img/Logo.ico" alt="Oficium"></img>
+                                            <img src="/Img/Logo.ico" alt="Oficium"></img>
                                         </a>
                                         <button className="hamburger hamburger--slider" type="button">
                                             <span className="hamburger-box">
@@ -62,7 +62,7 @@ class Menus extends React.Component {
                         <aside className="menu-sidebar d-none d-lg-block">
                             <div className="logo">
                                 <a href="index.html">
-                                    <img src="/img/Logo.ico" alt="Oficium" />
+                                    <img src="/Img/Logo.ico" alt="Oficium" />
                                 </a>
                             </div>
                             <div className="menu-sidebar__content js-scrollbar1">
