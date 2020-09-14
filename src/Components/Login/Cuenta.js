@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../css/Estilos.css';
+import '../../css/Principal/Estilos.css';
 import axios from 'axios';
 
 
