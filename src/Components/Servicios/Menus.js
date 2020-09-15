@@ -5,7 +5,7 @@ class Menus extends React.Component {
     render() {
         return (
             <div>
-                <div className="animsition">
+                <body className="animsition">
                     <div className="page-wrapper">
                         <header className="header-mobile d-block d-lg-none">
                             <div className="header-mobile__bar">
@@ -139,7 +139,21 @@ class Menus extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                    <script src="/src/css/Principal/font-face.css"></script>
+                    <script src="/src/css/Principal/vendor/bootstrap-4.1/popper.min.js"></script>
+                    <script src="/src/css/Principal/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+                    <script src="/src/css/Principal/vendor/slick/slick.min.js"></script>
+                    <script src="/src/css/Principal/vendor/wow/wow.min.js"></script>
+                    <script src="/src/css/Principal/vendor/animsition/animsition.min.js"></script>
+                    <script src="/src/css/Principal/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+                    <script src="/src/css/Principal/vendor/counter-up/jquery.waypoints.min.js"></script>
+                    <script src="/src/css/Principal/vendor/counter-up/jquery.counterup.min.js"></script>
+                    <script src="/src/css/Principal/vendor/circle-progress/circle-progress.min.js"></script>
+                    <script src="/src/css/Principal/vendor/perfect-scrollbar/perfect-scrollbar.css "></script>
+                    <script src="/src/css/Principal/vendor/chartjs/Chart.bundle.min.js"></script>
+                    <script src="/src/css/Principal/vendor/select2/select2.min.js"></script>
+                    <script src="/src/css/Principal/js/main.js"></script>
+                </body>
             </div>
         );
     };
