@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../css/Estilos.css';
+import '../../css/Principal/Estilos.css';
 import Servicio from './Servicio';
 class Menus extends React.Component {
     render() {
         return (
             <div>
-                <body className="animsition">
+                <div className="animsition">
                     <div className="page-wrapper">
                         <header className="header-mobile d-block d-lg-none">
                             <div className="header-mobile__bar">
@@ -139,7 +139,7 @@ class Menus extends React.Component {
                             </div>
                         </div>
                     </div>
-                </body>
+                </div>
             </div>
         );
     };
