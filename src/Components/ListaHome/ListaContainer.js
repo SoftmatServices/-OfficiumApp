@@ -40,9 +40,9 @@ class ListaContainer extends React.Component {
 		        	<div className="subcontainer">	
 		        		<Search handleSearch ={this.handleSearch}/>
 		        	</div>
-					<div id="sidebar">	
+					{/*<div id="sidebar">	
 						<Filtro handleSearch ={this.handleSearch}/>
-		        	</div>
+					</div>*/}
 	        	</div>
 				<div className="container bg-white">
 					<div className="row justify-content-center"> 
