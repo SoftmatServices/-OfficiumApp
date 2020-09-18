@@ -391,7 +391,6 @@ class Albaniles extends Component {
                             </div>
                         </div>
                     </div>
-
                 </body>
             </div>
 
