@@ -42,49 +42,49 @@ class Albaniles extends Component {
                                             </a>
                                             <ul className="navbar-mobile-sub__list list-unstyled js-sub-list">
                                                 <li>
-                                                    <a href="index.html">Albañiles</a>
+                                                    <Link to="/Albaniles">Albañiles</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index2.html">Arquitectos</a>
+                                                    <Link to="/Arquitectos">Arquitectos</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index3.html">Automóviles</a>
+                                                    <Link to="/Automoviles">Automóviles</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index4.html">Belleza</a>
+                                                    <Link to="/Belleza">Belleza</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index.html">Carpinteros</a>
+                                                    <Link to="/Carpinteros">Carpinteros</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index2.html">Cerrajeros</a>
+                                                    <Link to="/Cerrajeros">Cerrajeros</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index3.html">Entrenadores</a>
+                                                    <Link to="/Entrenadores">Entrenadores</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index4.html">Electricistas</a>
+                                                    <Link to="/Electricistas">Electricistas</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index.html">Reparaciones</a>
+                                                    <Link to="/Reparaciones">Reparaciones</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index2.html">Limpieza</a>
+                                                    <Link to="/Limpieza">Limpieza</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index3.html">Pintores</a>
+                                                    <Link to="/Pintores">Pintores</Link>
+                                                </li>
+                                                <li >
+                                                    <Link to="/Plomeria">Plomeria</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index4.html">Plomeria</a>
-                                                </li>
-                                                <li>
-                                                    <a href="index.html">Tecnicos</a>
+                                                    <Link to="/Tecnicos">Tecnicos</Link>
                                                 </li>
                                             </ul>
                                             <li className="has-sub">
                                                 <a className="js-arrow" href="index">
                                                     <i className="fas fa-copy"></i>Registro
-                                    </a>
+                                                </a>
                                                 <ul className="navbar-mobile-sub__list list-unstyled js-sub-list">
                                                     <li>
                                                         <a href="login.html">Login</a>
@@ -100,7 +100,7 @@ class Albaniles extends Component {
                                             <li className="has-sub">
                                                 <a className="js-arrow" href="index">
                                                     <i className="fas fa-copy"></i>Anuncio
-                                    </a>
+                                                </a>
                                                 <ul className="navbar-mobile-sub__list list-unstyled js-sub-list">
                                                     <li>
                                                         <a href="login.html">Crear Servicio</a>
@@ -127,43 +127,46 @@ class Albaniles extends Component {
                                             </a>
                                             <ul className="list-unstyled navbar__sub-list js-sub-list">
                                                 <li>
-                                                    <a href="index.html">Albañiles</a>
+                                                    <Link to="/Albaniles">Albañiles</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index2.html">Arquitectos</a>
+                                                    <Link to="/Albaniles">Albañiles</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index3.html">Automóviles</a>
+                                                    <Link to="/Arquitectos">Arquitectos</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index4.html">Belleza</a>
+                                                    <Link to="/Automoviles">Automóviles</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index.html">Carpinteros</a>
+                                                    <Link to="/Belleza">Belleza</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index2.html">Cerrajeros</a>
+                                                    <Link to="/Carpinteros">Carpinteros</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index3.html">Entrenadores</a>
+                                                    <Link to="/Cerrajeros">Cerrajeros</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index4.html">Electricistas</a>
+                                                    <Link to="/Entrenadores">Entrenadores</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index.html">Reparaciones</a>
+                                                    <Link to="/Electricistas">Electricistas</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index2.html">Limpieza</a>
+                                                    <Link to="/Reparaciones">Reparaciones</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index3.html">Pintores</a>
+                                                    <Link to="/Limpieza">Limpieza</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index4.html">Plomeria</a>
+                                                    <Link to="/Pintores">Pintores</Link>
+                                                </li>
+                                                <li >
+                                                    <Link to="/Plomeria">Plomeria</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="index.html">Tecnicos</a>
+                                                    <Link to="/Tecnicos">Tecnicos</Link>
                                                 </li>
                                             </ul>
                                             <li className="has-sub">
@@ -209,120 +212,6 @@ class Albaniles extends Component {
                                                     <i className="zmdi zmdi-search"></i>
                                                 </button>
                                             </form>
-                                            <div className="header-button">
-                                                <div className="noti-wrap">
-                                                    <div className="noti__item js-item-menu">
-                                                        <i className="zmdi zmdi-comment-more"></i>
-                                                        <span className="quantity">1</span>
-                                                        <div className="mess-dropdown js-dropdown">
-                                                            <div className="mess__title">
-                                                                <p>You have 2 news message</p>
-                                                            </div>
-                                                            <div className="mess__item">
-                                                                <div className="image img-cir img-40">
-                                                                    <img src="/img/camilo.jpg" alt="Camilo Andres" />
-                                                                </div>
-                                                                <div className="content">
-                                                                    <h6>Camilo Andres</h6>
-                                                                    <p>Have sent a photo</p>
-                                                                    <span className="time">3 min ago</span>
-                                                                </div>
-                                                            </div>
-                                                            <div className="mess__item">
-                                                                <div className="image img-cir img-40">
-                                                                    <img src="/img/camilo.jpg" alt="Diane Myers" />
-                                                                </div>
-                                                                <div className="content">
-                                                                    <h6>Diane Myers</h6>
-                                                                    <p>You are now connected on message</p>
-                                                                    <span className="time">Yesterday</span>
-                                                                </div>
-                                                            </div>
-                                                            <div className="mess__footer">
-                                                                <a href="index">View all messages</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="noti__item js-item-menu">
-                                                        <i className="zmdi zmdi-email"></i>
-                                                        <span className="quantity">1</span>
-                                                        <div className="email-dropdown js-dropdown">
-                                                            <div className="email__title">
-                                                                <p>You have 3 New Emails</p>
-                                                            </div>
-                                                            <div className="email__item">
-                                                                <div className="image img-cir img-40">
-                                                                    <img src="/img/camilo.jpg" alt="Cynthia Harvey" />
-                                                                </div>
-                                                                <div className="content">
-                                                                    <p>Meeting about new dashboard...</p>
-                                                                    <span>Cynthia Harvey, 3 min ago</span>
-                                                                </div>
-                                                            </div>
-                                                            <div className="email__item">
-                                                                <div className="image img-cir img-40">
-                                                                    <img src="/img/camilo.jpg" alt="Cynthia Harvey" />
-                                                                </div>
-                                                                <div className="content">
-                                                                    <p>Meeting about new dashboard...</p>
-                                                                    <span>Cynthia Harvey, Yesterday</span>
-                                                                </div>
-                                                            </div>
-                                                            <div className="email__item">
-                                                                <div className="image img-cir img-40">
-                                                                    <img src="/img/camilo.jpg" alt="Cynthia Harvey" />
-                                                                </div>
-                                                                <div className="content">
-                                                                    <p>Meeting about new dashboard...</p>
-                                                                    <span>Cynthia Harvey, April 12,,2018</span>
-                                                                </div>
-                                                            </div>
-                                                            <div className="email__footer">
-                                                                <a href="index">See all emails</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="noti__item js-item-menu">
-                                                    <i className="zmdi zmdi-notifications"></i>
-                                                    <span className="quantity">3</span>
-                                                    <div className="notifi-dropdown js-dropdown">
-                                                        <div className="notifi__title">
-                                                            <p>You have 3 Notifications</p>
-                                                        </div>
-                                                        <div className="notifi__item">
-                                                            <div className="bg-c1 img-cir img-40">
-                                                                <i className="zmdi zmdi-email-open"></i>
-                                                            </div>
-                                                            <div className="content">
-                                                                <p>You got a email notification</p>
-                                                                <span className="date">April 12, 2018 06:50</span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="notifi__item">
-                                                            <div className="bg-c2 img-cir img-40">
-                                                                <i className="zmdi zmdi-account-box"></i>
-                                                            </div>
-                                                            <div className="content">
-                                                                <p>Your account has been blocked</p>
-                                                                <span className="date">April 12, 2018 06:50</span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="notifi__item">
-                                                            <div className="bg-c3 img-cir img-40">
-                                                                <i className="zmdi zmdi-file-text"></i>
-                                                            </div>
-                                                            <div className="content">
-                                                                <p>You got a new file</p>
-                                                                <span className="date">April 12, 2018 06:50</span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="notifi__footer">
-                                                            <a href="index">All notifications</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div className="account-wrap">
                                                 <div className="account-item clearfix js-item-menu">
                                                     <div className="image">
@@ -333,35 +222,35 @@ class Albaniles extends Component {
                                                     </div>
                                                     <div className="account-dropdown js-dropdown">
                                                         <div className="info clearfix">
-                                                            <div class="image">
+                                                            <div className="image">
                                                                 <a href="index">
                                                                     <img src="/img/camilo.jpg" alt="Camilo Andres" />
                                                                 </a>
                                                             </div>
-                                                            <div class="content">
-                                                                <h5 class="name">
+                                                            <div className="content">
+                                                                <h5 className="name">
                                                                     <a href="index">Camilo</a>
                                                                 </h5>
-                                                                <span class="email">johndoe@example.com</span>
+                                                                <span className="email">johndoe@example.com</span>
                                                             </div>
                                                         </div>
-                                                        <div class="account-dropdown__body">
-                                                            <div class="account-dropdown__item">
+                                                        <div className="account-dropdown__body">
+                                                            <div className="account-dropdown__item">
                                                                 <a href="index">
-                                                                    <i class="zmdi zmdi-account"></i>Account</a>
+                                                                    <i className="zmdi zmdi-account"></i>Account</a>
                                                             </div>
-                                                            <div class="account-dropdown__item">
+                                                            <div className="account-dropdown__item">
                                                                 <a href="index">
-                                                                    <i class="zmdi zmdi-settings"></i>Setting</a>
+                                                                    <i className="zmdi zmdi-settings"></i>Setting</a>
                                                             </div>
-                                                            <div class="account-dropdown__item">
+                                                            <div className="account-dropdown__item">
                                                                 <a href="index">
-                                                                    <i class="zmdi zmdi-money-box"></i>Billing</a>
+                                                                    <i className="zmdi zmdi-money-box"></i>Billing</a>
                                                             </div>
                                                         </div>
-                                                        <div class="account-dropdown__footer">
+                                                        <div className="account-dropdown__footer">
                                                             <a href="index">
-                                                                <i class="zmdi zmdi-power"></i>Logout</a>
+                                                                <i className="zmdi zmdi-power"></i>Logout</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -371,15 +260,15 @@ class Albaniles extends Component {
                                 </div>
                             </header>
 
-                            <div class="main-content">
-                                <div class="section__content section__content--p30">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="overview-wrap">
-                                                    <h2 class="title-1">Albañiles</h2>
-                                                    <button class="au-btn au-btn-icon au-btn--blue">
-                                                        <i class="zmdi zmdi-plus"></i>add item</button>
+                            <div className="main-content">
+                                <div className="section__content section__content--p30">
+                                    <div className="container-fluid">
+                                        <div className="row">
+                                            <div className="col-md-12">
+                                                <div className="overview-wrap">
+                                                    <h2 className="title-1">Albañiles</h2>
+                                                    <button className="au-btn au-btn-icon au-btn--blue">
+                                                        <i className="zmdi zmdi-plus"></i>add item</button>
                                                 </div>
                                                 <div>
                                                     <ListaContainer />
