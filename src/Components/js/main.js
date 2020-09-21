@@ -1,6 +1,11 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable no-undef */
+/* eslint-disable no-redeclare */
+/* eslint-disable no-unused-vars */
 
 (function ($) {
   // USE STRICT
+  // eslint-disable-next-line strict
   "use strict";
 
   try {
@@ -8,6 +13,8 @@
     var ctx = document.getElementById("widgetChart1");
     if (ctx) {
       ctx.height = 130;
+      // eslint-disable-next-line no-unused-vars
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -74,6 +81,7 @@
     var ctx = document.getElementById("widgetChart2");
     if (ctx) {
       ctx.height = 130;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -145,6 +153,7 @@
     var ctx = document.getElementById("widgetChart3");
     if (ctx) {
       ctx.height = 130;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -215,6 +224,7 @@
     var ctx = document.getElementById("widgetChart4");
     if (ctx) {
       ctx.height = 115;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -259,6 +269,7 @@
     var ctx = document.getElementById("recent-rep-chart");
     if (ctx) {
       ctx.height = 250;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -335,6 +346,7 @@
     var ctx = document.getElementById("percent-chart");
     if (ctx) {
       ctx.height = 280;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
@@ -406,6 +418,7 @@
     var ctx = document.getElementById("recent-rep2-chart");
     if (ctx) {
       ctx.height = 230;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -500,6 +513,7 @@
     var ctx = document.getElementById("recent-rep3-chart");
     if (ctx) {
       ctx.height = 230;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -581,6 +595,7 @@
     var ctx = document.getElementById("widgetChart5");
     if (ctx) {
       ctx.height = 220;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -624,6 +639,7 @@
     var ctx = document.getElementById("percent-chart2");
     if (ctx) {
       ctx.height = 209;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
@@ -690,6 +706,7 @@
     var ctx = document.getElementById("sales-chart");
     if (ctx) {
       ctx.height = 150;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -789,6 +806,7 @@
     var ctx = document.getElementById("team-chart");
     if (ctx) {
       ctx.height = 150;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -878,6 +896,7 @@
     var ctx = document.getElementById("barChart");
     if (ctx) {
       ctx.height = 200;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'bar',
         defaultFontFamily: 'Poppins',
@@ -939,6 +958,7 @@
     var ctx = document.getElementById("radarChart");
     if (ctx) {
       ctx.height = 200;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'radar',
         data: {
@@ -989,6 +1009,7 @@
     var ctx = document.getElementById("lineChart");
     if (ctx) {
       ctx.height = 150;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -1060,6 +1081,7 @@
     var ctx = document.getElementById("doughutChart");
     if (ctx) {
       ctx.height = 150;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
@@ -1111,6 +1133,7 @@
     var ctx = document.getElementById("pieChart");
     if (ctx) {
       ctx.height = 200;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'pie',
         data: {
@@ -1160,6 +1183,7 @@
     var ctx = document.getElementById("polarChart");
     if (ctx) {
       ctx.height = 200;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'polarArea',
         data: {
@@ -1204,6 +1228,7 @@
     var ctx = document.getElementById("singelBarChart");
     if (ctx) {
       ctx.height = 150;
+      // eslint-disable-next-line no-undef
       var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -1248,12 +1273,14 @@
     console.log(error);
   }
 
+// eslint-disable-next-line no-undef
 })(jQuery);
 
 
 
 (function ($) {
     // USE STRICT
+    // eslint-disable-next-line strict
     "use strict";
     var navbars = ['header', 'aside'];
     var hrefSelector = 'a:not([target="_blank"]):not([href^="#"]):not([class^="chosen-single"])';
@@ -1284,6 +1311,7 @@
   })(jQuery);
 (function ($) {
   // USE STRICT
+  // eslint-disable-next-line strict
   "use strict";
 
   // Map
@@ -1445,6 +1473,7 @@
 })(jQuery);
 (function ($) {
   // Use Strict
+  // eslint-disable-next-line strict
   "use strict";
   try {
     var progressbarSimple = $('.js-progressbar-simple');
@@ -1475,6 +1504,7 @@
 })(jQuery);
 (function ($) {
   // USE STRICT
+  // eslint-disable-next-line strict
   "use strict";
 
   // Scroll Bar
@@ -1497,6 +1527,7 @@
 })(jQuery);
 (function ($) {
   // USE STRICT
+  // eslint-disable-next-line strict
   "use strict";
 
   // Select 2
@@ -1517,6 +1548,7 @@
 })(jQuery);
 (function ($) {
   // USE STRICT
+  // eslint-disable-next-line strict
   "use strict";
 
   // Dropdown 
@@ -1525,6 +1557,7 @@
     var sub_menu_is_showed = -1;
 
     for (var i = 0; i < menu.length; i++) {
+      // eslint-disable-next-line no-loop-func
       $(menu[i]).on('click', function (e) {
         e.preventDefault();
         $('.js-right-sidebar').removeClass("show-sidebar");        
@@ -1616,6 +1649,7 @@
 })(jQuery);
 (function ($) {
   // USE STRICT
+  // eslint-disable-next-line strict
   "use strict";
 
   // Load more
@@ -1643,6 +1677,7 @@
 })(jQuery);
 (function ($) {
   // USE STRICT
+  // eslint-disable-next-line strict
   "use strict";
 
   try {
